@@ -1,0 +1,12 @@
+version: '3'
+services:
+  dokgen:
+    build: .
+    ports:
+      - "5913:8080"
+    volumes:
+      - ./content:/content
+#  dokgen-editor:
+#    image: navikt/dokgen-editor
+#    ports:
+#      - "3291:3291"
