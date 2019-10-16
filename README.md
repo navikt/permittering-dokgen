@@ -1,12 +1,7 @@
-# familie-ks-maler
-Brevmaler for kontantstøtte
+# tag-dokgen
+Brevmaler for team tag
 
 
 ## Importer maler i prosjekt
-Malene må kopieres content/templates under familie-dokgen-java-prosjektet.
 
-```
-git clone git@github.com:navikt/familie-dokgen-java.git
-cd familie-dokgen-java/content
-git clone git@github.com:navikt/familie-ks-maler.git templates
-```
+se ... for mer info.
