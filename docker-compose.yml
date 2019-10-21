@@ -1,12 +1,8 @@
 version: '3'
 services:
   dokgen:
-    build: .
+    image: navikt/dokgen:latest
     ports:
       - "5913:8080"
     volumes:
-      - ./content:/content
-#  dokgen-editor:
-#    image: navikt/dokgen-editor
-#    ports:
-#      - "3291:3291"
+      - ./content:/app/content
