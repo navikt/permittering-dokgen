@@ -5,13 +5,13 @@
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "enhet",
+    "navEnhet",
     "saksbehandler"
   ],
   "properties": {
-    "enhet": {
+    "navEnhet": {
       "$id": "#/properties/enhet",
-      "type": "string",
+      "type": "object",
       "title": "The Enhet Schema",
       "default": "",
       "examples": [
@@ -21,7 +21,7 @@
     },
     "saksbehandler": {
       "$id": "#/properties/saksbehandler",
-      "type": "string",
+      "type": "object",
       "title": "The Saksbehandler Schema",
       "default": "",
       "examples": [
