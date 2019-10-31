@@ -4,30 +4,7 @@
   "$id": "http://example.com/root.json",
   "type": "object",
   "title": "The Root Schema",
-  "required": [
-    "enhet",
-    "saksbehandler"
-  ],
+  "required": [],
   "properties": {
-    "enhet": {
-      "$id": "#/properties/enhet",
-      "type": "string",
-      "title": "The Enhet Schema",
-      "default": "",
-      "examples": [
-        ""
-      ],
-      "pattern": "^(.*)$"
-    },
-    "saksbehandler": {
-      "$id": "#/properties/saksbehandler",
-      "type": "string",
-      "title": "The Saksbehandler Schema",
-      "default": "",
-      "examples": [
-        ""
-      ],
-      "pattern": "^(.*)$"
-    }
   }
 }
