@@ -1,103 +1,51 @@
-<div class="centered_text_plain">
+{{> header }}
+Til {{tiltakArrangor.arbgiverNavn}}
 
-    Unntatt offentlighet, jf. offl. § 13
+# Dere har rett til lønnstilskudd
 
-</div>
+{{navEnhet.navKontorNavn}} og dere er blitt enige om dette:
 
-<div>![NAV logo](pdf/navikon.png)</div>
 
-<div class="left_text_plain">
+|                         |                                                                         |
+| ----------------        | ---                                                                     |
+| Tiltaket:          <td/>| {{tiltakNavn}}                                                          |
+| Deltakeren:        <td/>| {{deltaker.fornavn}} {{deltaker.etternavn}} ({{deltaker.fodselsnr}})    |
+| Perioden:          <td/>| {{periode.fraDato}} - {{periode.tilDato}}                                               |
+| Støtten fra NAV:   <td/>| opptil {{totaltTilskuddbelop}} kroner. Dette er % av bedriftens totale utgifter.|
 
-    {{ tiltakArrangor.arbgiverNavn }}
+### Hva må dere gjøre for å få utbetalt pengene?
+Dere må sende inn [skjema for refusjonskrav (PDF)](https://www.nav.no/_attachment/805366544 "Refusjonskrav for lønnstilskudd"). 
+Siste frist er {{tilsagnDato}}.
 
-</div>
+<br/>
 
-​
+Hvis dere har mindre lønnsutgifter enn avtalt, blir også støtten redusert. Derfor må dere
+rapportere om de faktiske lønnsutgiftene dere har har innen [dato]. 
+Vi vil deretter regne ut støtten dere har krav på
+ut i fra inntekten og lønnsslipper dere har rapportert inn til oss.
 
-<div class="centered_text_plain">
+<br/>
 
-    Vår ref.: UKJENT - Dato: {{ tilsagnDato }}
+Vi kan kontrollere om pengene som blir utbetalt blir brukt riktig. Dette går fram av Bevilgningsregelementet §10.
 
-</div>
+<br/>
 
-​
+Dere må gi beskjed om informasjonen vi har om bedriften er feil:
 
-<div class="line_top line_bottom line_left line_right block" style="vertical-align: bottom">
+|                        |                                 |
+| -----------            | -----------                     |
+| Bedriftsnummer: <td/>  | {{tiltakArrangor.orgNummer}}    |
+| Kontonummer:    <td/>  | {{tiltakArrangor.kontoNummer}}  |
 
-    <div class="line_right inline" style="width: 66%; margin: 0; vertical-align: bottom">
+### Dette må bedriften gjøre:
 
-        # Tilsagn om tilskudd til Midlertidig lønnstilskudd
+* Levere lønnsslipper hvis vi ber om det
+* Følge reglene for tilskuddsordningen som ligger vedlagt
 
-    </div>
+<br/>
 
-</div>
+Hilsen
 
-<div class="left_text_plain">
+{{saksbehandler.fornavn}} {{saksbehandler.etternavn}}
 
-    NAV {{ navEnhet.navKontorNavn }} gir {{ tiltakArrangor.arbgiverNavn }} tilsagn om tilskudd med inntil {{ totaltTilskuddbelop }} for
-
-    {{ deltaker.fornavn }} {{ deltaker.etternavn }} - {{ deltaker.fodselsnr }}
-
-</div>
-
-<div class="left_text_plain">
-
-    Tilsagnet fordeler slik: SKAL VI HA LISTING AV POSTER?
-
-    Lønnstilskudd - LISTE-ELEM kr
-
-    Totalt - {{ totaltTilskuddbelop }} kr
-
-</div>
-
-<div class="left_text_plain">
-
-    Tilsagnet skal benyttes innen {{ periode.fraDato }} til {{ periode.tilDato }}. Tilsagnet er gitt under forutsetning av at vilkår og regelverk for tiltak følges, se vedlegg.
-
-</div>
-
-<div class="left_text_plain">
-
-    Refusjonskravet må fremmes innen HVA BLIR FRIST-DATO?. Tilsagnet trekkes tilbake dersom refusjonskravet ikke blir sendt NAV {{ navEnhet.navKontorNavn }} i rett tid.
-
-</div>
-
-<div class="left_text_plain">
-
-    NAV og Riksrevisjonen kan kontrollere bruken av midlene, i henhold til vilkårene i Bevilgningsregelementet § 10.
-
-</div>
-
-<div class="left_text_plain">
-
-    Mottakers organisasjonsnummer: - {{ tiltakArrangor.orgNummer }}
-
-    ​ Mottakers bedriftsnummer: - MANGLER ​
-
-    Mottakers kontonummer: - {{ tiltakArrangor.kontoNummer }}
-
-</div>
-
-<div class="left_text_plain">
-
-    Skjema for refusjonskrav finnes på www.nav.no.
-
-</div>
-
-<div class="left_text_plain">
-
-    Vedlagt følger kravsprsifikasjon med regler for denne tilskuddsordningen.
-
-</div>
-
-<div class="left_text_plain">
-
-    Med hilsen
-
-</div>
-
-<div class="left_text_plain">
-
-    {{ saksbehandler.fornavn }} {{ saksbehandler.etternavn }}
-
-</div>
+{{> footer }}
