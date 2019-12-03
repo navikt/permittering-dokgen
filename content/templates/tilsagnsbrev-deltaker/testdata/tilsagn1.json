@@ -28,8 +28,8 @@
     "tilDato": "31 desember 2019"
   },
   "saksbehandler": {
-    "etternavn": "Johannessen",
-    "fornavn": "Odd Helge"
+    "etternavn": "Åsberg",
+    "fornavn": "Kristina"
   },
   "tilsagnDato": "22 oktober 2019",
   "tilsagnNummer": {
@@ -40,7 +40,8 @@
   "tilskuddListe": [
     {
       "tilskuddBelop": "142000",
-      "tilskuddType": "Opplæringstilskudd"
+      "tilskuddType": "Opplæringstilskudd",
+      "tilskuddProsent": "40"
     },
     {
       "tilskuddBelop": "142000",
