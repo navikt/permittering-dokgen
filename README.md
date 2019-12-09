@@ -4,4 +4,6 @@ Brevmaler for team tag
 
 ## Importer maler i prosjekt
 
-se ... for mer info.
+Bruker:
+
+https://github.com/navikt/familie-dokgen-java 

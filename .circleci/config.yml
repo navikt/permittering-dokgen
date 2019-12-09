@@ -10,7 +10,6 @@ executors:
   deployment-cli:
     environment:
       TEAM: teamtag
-      CLUSTER: dev-fss
       REGISTRY: docker.pkg.github.com
     docker:
       - image: navikt/deployment-cli:latest
@@ -43,18 +42,40 @@ jobs:
           name: Testing with docker-compose
           command: chmod +x *.sh && ./up.sh
 
-  deploy:
+  docker-build:
     executor: deployment-cli
+    steps:
+      - checkout
+      - env/attach-env
+      - nais/docker:
+          registry: $REGISTRY
+          image: $IMAGE_NAME
+          tag: $RELEASE_VERSION
+
+  deploy-til-dev:
+    executor: deployment-cli
+    steps:
+      - deploy:
+          miljo: 'dev-fss'
+
+  deploy-til-prod:
+    executor: deployment-cli
+    steps:
+      - deploy:
+          miljo: 'prod-fss'
+
+commands:
+  deploy:
+    description: 'Deploy til et gitt miljø'
+    parameters:
+      miljo:
+        type: string
     steps:
       - checkout
       - env/attach-env
       - run:
           name: Unpack Private Key
           command: echo $GITHUB_PRIVATE_KEY | base64 -d > .circleci/github.key.pem
-      - nais/docker:
-          registry: $REGISTRY
-          image: $IMAGE_NAME
-          tag: $RELEASE_VERSION
       - nais/deploy-with-gh-app:
           repo: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
           nais-template: naiserator.yaml
@@ -62,7 +83,9 @@ jobs:
           github-app-id: 43789
           image: $REGISTRY/$IMAGE_NAME
           tag: $RELEASE_VERSION
-          environment: $CLUSTER
+          environment: << parameters.miljo >>
+          template-vars: nais/<< parameters.miljo >>.json
+          enable-vars: true
 
 workflows:
   version: 2
@@ -74,10 +97,31 @@ workflows:
           context: tag-ci
           requires:
             - verify
-      - deploy:
+      - docker-build:
           context: tag-ci
           requires:
             - test
+          filters:
+            branches:
+              only: master
+      - deploy-til-dev:
+          context: tag-ci
+          requires:
+            - docker-build
+          filters:
+            branches:
+              only: master
+      - godkjenn-deploy-til-prod:
+          type: approval
+          requires:
+            - docker-build
+          filters:
+            branches:
+              only: master
+      - deploy-til-prod:
+          context: tag-ci
+          requires:
+            - godkjenn-deploy-til-prod
           filters:
             branches:
               only: master
