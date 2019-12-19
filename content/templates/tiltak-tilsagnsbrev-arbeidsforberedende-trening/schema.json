@@ -9,12 +9,10 @@
     "tiltakArrangor",
     "navEnhet",
     "tiltakNavn",
-    "deltaker",
     "periode",
     "totaltTilskuddbelop",
     "tilsagnDato"
   ],
-  "properties": {
     "saksbehandler": {
       "$id": "#/properties/saksbehandler",
       "type": "object",
@@ -54,36 +52,6 @@
       "default": "",
       "examples": [
         "Midlertidig lønnstilskudd"
-      ],
-      "pattern": "^(.*)$"
-    },
-    "deltaker.fodselsnr": {
-      "$id": "#/properties/fodselsnr",
-      "type": "string",
-      "title": "The Fodselsnr Schema",
-      "default": "",
-      "examples": [
-        "0101011990"
-      ],
-      "pattern": "^(.*)$"
-    },
-    "deltaker.fornavn": {
-      "$id": "#/properties/fornavn",
-      "type": "string",
-      "title": "The Fornavn Schema",
-      "default": "",
-      "examples": [
-        "Ola"
-      ],
-      "pattern": "^(.*)$"
-    },
-    "deltaker.etternavn": {
-      "$id": "#/properties/etternavn",
-      "type": "string",
-      "title": "The Etternavn Schema",
-      "default": "",
-      "examples": [
-        "Nordmann"
       ],
       "pattern": "^(.*)$"
     },

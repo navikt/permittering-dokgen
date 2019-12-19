@@ -5,8 +5,6 @@
   "type": "object",
   "title": "The Root Schema",
   "required": [
-    "antallDeltakere",
-    "antallTimeverk",
     "saksbehandler",
     "tiltakArrangor",
     "navEnhet",
@@ -15,27 +13,6 @@
     "totaltTilskuddbelop",
     "tilsagnDato"
   ],
-  "properties": {
-    "antallDeltakere": {
-      "$id": "#/properties/antallDeltakere",
-      "type": "string",
-      "title": "The antallDeltakere Schema",
-      "default": "",
-      "examples": [
-        "8"
-      ],
-      "pattern": "^(.*)$"
-    },
-    "antallTimeverk": {
-      "$id": "#/properties/antallTimeverk",
-      "type": "string",
-      "title": "The antallTimeverk Schema",
-      "default": "",
-      "examples": [
-        "200"
-      ],
-      "pattern": "^(.*)$"
-    },
     "saksbehandler": {
       "$id": "#/properties/saksbehandler",
       "type": "object",
