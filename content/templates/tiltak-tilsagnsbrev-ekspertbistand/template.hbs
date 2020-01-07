@@ -1,13 +1,14 @@
-{{> header }}
+
 
 Til {{tiltakArrangor.arbgiverNavn}}
 
-
-# Dere har fått innvilget ekspertbistand
+# Dere har fått innvilget tilskudd til ekspertbistand
 
 {{> tiltak-tilsagnsbrev-detaljer-deltaker }}
 
-Dere må følge [betingelsene (PDF)]som gjelder for {{tiltakNavn}}. Det vises her til [forskrift om ekspertbistand](https://lovdata.no/dokument/SF/forskrift/2019-08-29-1105?q=ekspertbis "Forskrift ekspertbistand")
+<br/>
+
+Dere må følge betingelsene som gjelder for {{tiltakNavn}}. Det vises her til [forskrift om ekspertbistand](https://lovdata.no/dokument/SF/forskrift/2019-08-29-1105?q=ekspertbis "Forskrift ekspertbistand")
 
 ### Hvordan kan dere få utbetalt pengene?
 Dere må rapportere de faktiske utgiftene innen {{refusjonfristDato}}. Dette gjør dere ved å fylle ut [skjema for refusjonskrav (PDF)](https://www.nav.no/soknader/nb/bedrift/refusjoner/refusjon-ekspertbistand#NAV761390 "Refusjonskrav for ekspertbistand"), og sende til NAV.
@@ -15,14 +16,9 @@ Dere må rapportere de faktiske utgiftene innen {{refusjonfristDato}}. Dette gj�
 Kravet kan tidligst sendes etter utbetalingsperiodens slutt og senest innen {{refusjonfristDato}}.
 
 <br/>
-Vi vil regne ut støtten dere har krav på ut fra dokumentasjon som dere sender inn til oss med refusjonskravet. Hvis dere har mindre utgifter enn avtalt, blir også støtten redusert. Tilskuddet utbetalaes etterskuddsvis, så fort vi har behandlet kravet.
 
-<br/>
-
-{{> tiltak-tilsagnsbrev-advarsel }}
+{{> tiltak-tilsagnsbrev-beregning-info }}
 
 {{> tiltak-tilsagnsbrev-orgno-konto }}
 
 {{> tiltak-tilsagnsbrev-signert-av }}
-
-{{> footer }}

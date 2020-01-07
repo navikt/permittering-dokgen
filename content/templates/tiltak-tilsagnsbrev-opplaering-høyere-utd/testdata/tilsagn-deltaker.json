@@ -32,7 +32,7 @@
   },
   "tilskuddListe": [
     {
-      "tilskuddBelop": "142000",
+      "tilskuddBelop": "14200",
       "tilskuddType": "Opplæringstilskudd",
       "tilskuddProsent": "60"
     },
@@ -52,9 +52,9 @@
     "postNummer": "4014",
     "postSted": "Oslo"
   },
-  "tiltakKode": "BIO",
-  "tiltakNavn": "Bedriftsintern opplæring (BIO)",
-  "totaltTilskuddbelop": "284000",
+  "tiltakKode": "UKJENT",
+  "tiltakNavn": "Høyere utdanning",
+  "totaltTilskuddbelop": "28400",
   "valutaKode": "NOK",
-  "refusjonfristDato": "2020-02-29"
+  "refusjonfristDato": "29 februar 2020"
 }

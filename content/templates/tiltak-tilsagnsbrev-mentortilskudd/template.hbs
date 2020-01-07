@@ -1,4 +1,3 @@
-{{> header }}
 
 Til {{tiltakArrangor.arbgiverNavn}}
 
@@ -6,23 +5,19 @@ Til {{tiltakArrangor.arbgiverNavn}}
 
 {{> tiltak-tilsagnsbrev-detaljer-deltaker }}
 
+<br/>
+
 Dere må følge [betingelsene (PDF)](https://www.nav.no/no/person/arbeid/oppfolging-og-tiltak-for-a-komme-i-jobb/tiltak-for-a-komme-i-jobb/relatert-innhold/mentor/_/attachment/download/bb4a6b29-6ee1-4a89-a86f-1b8e3f1ef3f5:51db097315d18b4ce79af62b302f86dbea13d394/krav-vilkar-og-informasjon-mentor.pdf "krav, vilkår og informasjon mentor") som gjelder for mentortiltaket.
 
 ### Hvordan kan dere få utbetalt pengene?
-Dere må rapportere de faktiske lønnsutgiftene innen {{refusjonsdato}}. Dette gjør dere ved å fylle ut [skjema for refusjonskrav (PDF)](https://www.nav.no/soknader/nb/bedrift/refusjoner/mentor#NAV761385 "Refusjonskrav Mentor") og sende til NAV.
+Dere må rapportere de faktiske lønnsutgiftene innen {{refusjonfristDato}}. Dette gjør dere ved å fylle ut [skjema for refusjonskrav (PDF)](https://www.nav.no/soknader/nb/bedrift/refusjoner/mentor#NAV761385 "Refusjonskrav Mentor") og sende til NAV.
 
-Kravet kan tidligst sendes etter utbetalingsperiodens slutt og senest innen {{refusjonsdato}}.
-
-<br/>
-
-Vi vil regne ut støtten dere har krav på ut fra inntekt og lønn dere har rapportert inn til oss. Hvis dere har mindre lønnsutgifter enn avtalt, blir også støtten redusert. Tilskuddet utbetalaes etterskuddsvis, så fort vi har behandlet kravet.
+Kravet kan tidligst sendes etter utbetalingsperiodens slutt og senest innen {{refusjonfristDato}}.
 
 <br/>
 
-{{> tiltak-tilsagnsbrev-advarsel }}
+{{> tiltak-tilsagnsbrev-beregning-info }}
 
 {{> tiltak-tilsagnsbrev-orgno-konto }}
 
 {{> tiltak-tilsagnsbrev-signert-av }}
-
-{{> footer }}

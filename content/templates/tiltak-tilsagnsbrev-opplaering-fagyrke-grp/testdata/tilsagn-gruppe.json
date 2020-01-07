@@ -1,17 +1,10 @@
 {
   "administrasjonKode": "INST",
+  "antallDeltakere": "17",
+  "antallTimeverk": "2932",
   "beslutter": {
-    "etternavn": "Strømmen",
-    "fornavn": "Evy"
-  },
-  "deltaker": {
-    "etternavn": "Nilsen",
-    "fornavn": "Nils",
-    "fodselsnr": "05055599999",
-    "landKode": "NO",
-    "postAdresse": "Waldemar Thranesgt 89",
-    "postNummer": "0223",
-    "postSted": "Oslo"
+    "etternavn": "Beslutter",
+    "fornavn": "Berit"
   },
   "kommentar": "Ingen kommentar",
   "navEnhet": {
@@ -23,7 +16,6 @@
     "postSted": "Stavanger",
     "telefon": "55553333"
   },
-  "refusjonfristDato":"01 oktober 2019",
   "periode": {
     "fraDato": "01 oktober 2019",
     "tilDato": "31 desember 2019"
@@ -40,29 +32,29 @@
   },
   "tilskuddListe": [
     {
-      "tilskuddBelop": "14200",
+      "tilskuddBelop": "142000",
       "tilskuddType": "Opplæringstilskudd",
       "tilskuddProsent": "60"
     },
     {
-      "tilskuddBelop": "14200",
+      "tilskuddBelop": "142000",
       "tilskuddType": "Lønnstilskudd"
     }
   ],
   "tiltakArrangor": {
-    "arbgiverNavn": "L.S. Solland AS",
+    "arbgiverNavn": "BIRTAVARRE OG VÆRLANDET REGNSKAP",
     "kontoNummer": "32010501481",
     "landKode": "NO",
     "maalform": "Nynorsk",
-    "orgNummer": "973152289",
-    "orgNummerMorselskap": "918160922",
+    "orgNummer": "910825607",
+    "orgNummerMorselskap": "943506698",
     "postAdresse": "Pedersgata 110 ",
     "postNummer": "4014",
     "postSted": "Oslo"
   },
-  "tiltakKode": "INKLUTILS",
-  "tiltakNavn": "Inkluderingstilskudd",
-  "totaltTilskuddbelop": "28400",
+  "tiltakKode": "UKJENT",
+  "tiltakNavn": "Gruppe fag og yrkesopplæring",
+  "totaltTilskuddbelop": "284000",
   "valutaKode": "NOK",
-  "tilskuddsProsent": "60 %"
+  "refusjonfristDato": "02 februar 2020"
 }

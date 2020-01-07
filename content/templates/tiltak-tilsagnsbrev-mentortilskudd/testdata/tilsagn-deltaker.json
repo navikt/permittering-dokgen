@@ -1,10 +1,17 @@
 {
   "administrasjonKode": "INST",
-  "antallDeltakere": "17",
-  "antallTimeverk": "2932",
   "beslutter": {
-    "etternavn": "Beslutter",
-    "fornavn": "Berit"
+    "etternavn": "Strømmen",
+    "fornavn": "Evy"
+  },
+  "deltaker": {
+    "etternavn": "Nilsen",
+    "fornavn": "Nils",
+    "fodselsnr": "05055599999",
+    "landKode": "NO",
+    "postAdresse": "Waldemar Thranesgt 89",
+    "postNummer": "0223",
+    "postSted": "Oslo"
   },
   "kommentar": "Ingen kommentar",
   "navEnhet": {
@@ -16,6 +23,7 @@
     "postSted": "Stavanger",
     "telefon": "55553333"
   },
+  "refusjonfristDato":"01 oktober 2019",
   "periode": {
     "fraDato": "01 oktober 2019",
     "tilDato": "31 desember 2019"
@@ -32,29 +40,29 @@
   },
   "tilskuddListe": [
     {
-      "tilskuddBelop": "142000",
+      "tilskuddBelop": "14200",
       "tilskuddType": "Opplæringstilskudd",
       "tilskuddProsent": "60"
     },
     {
-      "tilskuddBelop": "142000",
+      "tilskuddBelop": "14200",
       "tilskuddType": "Lønnstilskudd"
     }
   ],
   "tiltakArrangor": {
-    "arbgiverNavn": "BIRTAVARRE OG VÆRLANDET REGNSKAP",
+    "arbgiverNavn": "L.S. Solland AS",
     "kontoNummer": "32010501481",
     "landKode": "NO",
     "maalform": "Nynorsk",
-    "orgNummer": "910825607",
-    "orgNummerMorselskap": "943506698",
+    "orgNummer": "973152289",
+    "orgNummerMorselskap": "918160922",
     "postAdresse": "Pedersgata 110 ",
     "postNummer": "4014",
     "postSted": "Oslo"
   },
-  "tiltakKode": "BIO",
-  "tiltakNavn": "Bedriftsintern opplæring (BIO)",
-  "totaltTilskuddbelop": "284000",
+  "tiltakKode": "MENTOR",
+  "tiltakNavn": "Mentor",
+  "totaltTilskuddbelop": "28400",
   "valutaKode": "NOK",
-  "refusjonfristDato": "2020-02-29"
+  "tilskuddsProsent": "60 %"
 }
