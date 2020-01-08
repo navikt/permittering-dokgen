@@ -84,6 +84,7 @@ commands:
           image: $REGISTRY/$IMAGE_NAME
           tag: $RELEASE_VERSION
           environment: << parameters.miljo >>
+            TZ: "Europe/Amsterdam"
           template-vars: nais/<< parameters.miljo >>.json
           enable-vars: true
 
