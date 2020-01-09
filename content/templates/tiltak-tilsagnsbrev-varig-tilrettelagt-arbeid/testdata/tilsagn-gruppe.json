@@ -1,0 +1,60 @@
+{
+  "administrasjonKode": "INST",
+  "antallDeltakere": "17",
+  "antallTimeverk": "2932",
+  "beslutter": {
+    "etternavn": "Beslutter",
+    "fornavn": "Berit"
+  },
+  "kommentar": "Ingen kommentar",
+  "navEnhet": {
+    "faks": "52048361",
+    "navKontor": "1187",
+    "navKontorNavn": "NAV Tiltak Rogaland",
+    "postAdresse": "Postboks 420",
+    "postNummer": "4002",
+    "postSted": "Stavanger",
+    "telefon": "55553333"
+  },
+  "periode": {
+    "fraDato": "01 oktober 2019",
+    "tilDato": "31 desember 2019"
+  },
+  "saksbehandler": {
+    "etternavn": "Saksbehandler",
+    "fornavn": "Sara"
+  },
+  "tilsagnDato": "22 oktober 2019",
+  "tilsagnNummer": {
+    "aar": "2019",
+    "loepenrSak": "366023",
+    "loepenrTilsagn": "1"
+  },
+  "tilskuddListe": [
+    {
+      "tilskuddBelop": "142000",
+      "tilskuddType": "Opplæringstilskudd",
+      "tilskuddProsent": "60"
+    },
+    {
+      "tilskuddBelop": "142000",
+      "tilskuddType": "Lønnstilskudd"
+    }
+  ],
+  "tiltakArrangor": {
+    "arbgiverNavn": "BIRTAVARRE OG VÆRLANDET REGNSKAP",
+    "kontoNummer": "32010501481",
+    "landKode": "NO",
+    "maalform": "Nynorsk",
+    "orgNummer": "910825607",
+    "orgNummerMorselskap": "943506698",
+    "postAdresse": "Pedersgata 110 ",
+    "postNummer": "4014",
+    "postSted": "Oslo"
+  },
+  "tiltakKode": "TILRARB",
+  "tiltakNavn": "Varig tilrettelagt arbeid",
+  "totaltTilskuddbelop": "284000",
+  "valutaKode": "NOK",
+  "refusjonfristDato": "02 februar 2020"
+}

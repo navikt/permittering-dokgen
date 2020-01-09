@@ -21,8 +21,8 @@
     "tilDato": "31 desember 2019"
   },
   "saksbehandler": {
-    "etternavn": "Åsberg",
-    "fornavn": "Kristina"
+    "etternavn": "Saksbehandler",
+    "fornavn": "Sara"
   },
   "tilsagnDato": "22 oktober 2019",
   "tilsagnNummer": {
@@ -52,8 +52,9 @@
     "postNummer": "4014",
     "postSted": "Oslo"
   },
-  "tiltakKode": "BIO",
-  "tiltakNavn": "Bedriftsintern opplæring (BIO)",
+  "tiltakKode": "UKJENT",
+  "tiltakNavn": "Gruppe fag og yrkesopplæring",
   "totaltTilskuddbelop": "284000",
-  "valutaKode": "NOK"
+  "valutaKode": "NOK",
+  "refusjonfristDato": "02 februar 2020"
 }
