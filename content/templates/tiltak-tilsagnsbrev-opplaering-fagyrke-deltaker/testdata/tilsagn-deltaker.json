@@ -1,10 +1,17 @@
 {
   "administrasjonKode": "INST",
-  "antallDeltakere": "17",
-  "antallTimeverk": "2932",
   "beslutter": {
-    "etternavn": "Beslutter",
-    "fornavn": "Berit"
+    "etternavn": "Strømmen",
+    "fornavn": "Evy"
+  },
+  "deltaker": {
+    "etternavn": "Nilsen",
+    "fornavn": "Nils",
+    "fodselsnr": "05055599999",
+    "landKode": "NO",
+    "postAdresse": "Waldemar Thranesgt 89",
+    "postNummer": "0223",
+    "postSted": "Oslo"
   },
   "kommentar": "Ingen kommentar",
   "navEnhet": {
@@ -32,7 +39,7 @@
   },
   "tilskuddListe": [
     {
-      "tilskuddBelop": "14200",
+      "tilskuddBelop": "142000",
       "tilskuddType": "Opplæringstilskudd",
       "tilskuddProsent": "60"
     },
@@ -42,19 +49,20 @@
     }
   ],
   "tiltakArrangor": {
-    "arbgiverNavn": "BIRTAVARRE OG VÆRLANDET REGNSKAP",
+    "arbgiverNavn": "L.S. Solland AS",
     "kontoNummer": "32010501481",
     "landKode": "NO",
     "maalform": "Nynorsk",
-    "orgNummer": "910825607",
-    "orgNummerMorselskap": "943506698",
+    "orgNummer": "973152289",
+    "orgNummerMorselskap": "918160922",
     "postAdresse": "Pedersgata 110 ",
     "postNummer": "4014",
     "postSted": "Oslo"
   },
-  "tiltakKode": "UKJENT",
+  "tiltakKode": "ENKFAGYRKE",
   "tiltakNavn": "Enkeltplass fag og yrkesopplæring",
   "totaltTilskuddbelop": "28400",
   "valutaKode": "NOK",
-  "refusjonfristDato": "29 februar 2020"
+  "tilskuddsProsent": "60 %",
+  "refusjonfristDato": "02 februar 2020"
 }

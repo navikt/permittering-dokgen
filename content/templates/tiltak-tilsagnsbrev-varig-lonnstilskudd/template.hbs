@@ -1,23 +1,24 @@
+{{> tiltak-tilsagnsbrev-top-tekst }}
 
-Til {{tiltakArrangor.arbgiverNavn}}
+{{> tiltak-tilsagnsbrev-til-dato-ref }}
 
 # Dere har fått innvilget lønnstilskudd
 
 NAV og dere har blitt enige om dette:
 
-|                         |                                              |
-| ----------------        | ---                                          |
-| Tiltaket:          <td/>| {{tiltakNavn}}                               |
-| Deltakeren:        <td/>| {{deltaker.fornavn}} {{deltaker.etternavn}} ({{deltaker.fodselsnr}})   |
-| Utbetalingsperioden:<td/>| {{periode.fraDato}} - {{periode.tilDato}}                    |
-| Støtten fra NAV:   <td/>| Opptil {{totaltTilskuddbelop}} kroner. Dette er {{#each tilskuddListe}}{{tilskuddProsent}}{{/each}} % av bedriftens utgifter i utbetalingsperioden.|
+|                           |                                              |
+| ----------------          | ---                                          |
+| Tiltaket:                 | {{tiltakNavn}}                               |
+| Deltakeren:               | {{deltaker.fornavn}} {{deltaker.etternavn}} ({{deltaker.fodselsnr}})                |
+| Utbetalingsperioden:      | {{periode.fraDato}} - {{periode.tilDato}}                                          |
+| Støtten fra NAV:          | {{> tiltak-tilsagnsbrev-tilskuddsprosent }} |
 
 <br/>
 
 Dere må følge [betingelsene (PDF)](https://www.nav.no/no/person/arbeid/oppfolging-og-tiltak-for-a-komme-i-jobb/tiltak-for-a-komme-i-jobb/tidsubestemt-lonnstilskudd/_/attachment/download/28411137-48ae-4b48-a7c6-10febad5082a:1a5d95941ce483bf3dee6bb94686b3d1b2b56699/krav-vilkar-og-informasjon-til-tiltaksarrangor-varig-lonnstilskudd.pdf "Krav og vilkår for varig lønnstilskudd") som gjelder for lønnstilskudd.
 
 ### Hvordan kan dere få utbetalt pengene?
-Dere må rapportere de faktiske lønnsutgiftene innen {{refusjonfristDato}}. Dette gjør dere ved å fylle ut [skjema for refusjonskrav (PDF)](https://www.nav.no/soknader/nb/bedrift/refusjoner/lonnstilskud#NAV761320 "Refusjonskrav for lønnstilskudd"), og sende til NAV.
+Dere må rapportere de faktiske lønnsutgiftene innen {{refusjonfristDato}}. Dette gjør dere ved å fylle ut [skjema for refusjonskrav](https://www.nav.no/soknader/nb/bedrift/refusjoner/lonnstilskud#NAV761320 "Refusjonskrav for lønnstilskudd"), og sende til NAV.
 
 {{> tiltak-tilsagnsbrev-refusjonsfrist }}
 

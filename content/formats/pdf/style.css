@@ -51,37 +51,33 @@ body{
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0mm 0 10mm 0;
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 22px;
     margin: 3mm 0 1.5mm 0;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin: 10mm 0 1.5mm 0;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0.5mm 0 2mm 0;
 }
 
 tr {
-    font-size: 16px;
+    font-size: 14px;
 }
 
-td:first-child{
-    width: 200px;
-}
-
-/* table {
+ table {
     width: 100%;
-} */
+}
 
 .bold {
     font-weight: 700;
