@@ -75,8 +75,23 @@ tr {
     font-size: 14px;
 }
 
+/*
+td {
+    border: 1px solid black;
+}
+*/
+
  table {
     width: 100%;
+}
+
+.td01 {
+  width: 110px;
+  font-size: 12px;
+}
+
+.td02 {
+  width: 150px;
 }
 
 .bold {
