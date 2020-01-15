@@ -1,5 +1,5 @@
 # tag-dokgen
-Brevmaler for team tag
+Brevmaler for team tag.
 
 
 ## Importer maler i prosjekt
