@@ -40,3 +40,14 @@ jobs:
           PRINT_PAYLOAD: true
           VARS: nais/dev-fss.json
           VERSION: ${IMAGE}
+
+      - name: Deploy to Prod
+        uses: nais/deploy/actions/deploy@v1
+        env:
+          TEAM: teamtag
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: prod-fss
+          RESOURCE: naiserator-gha.yaml
+          PRINT_PAYLOAD: true
+          VARS: nais/prod-fss.json
+          VERSION: ${IMAGE}
