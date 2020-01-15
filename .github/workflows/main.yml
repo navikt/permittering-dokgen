@@ -2,9 +2,6 @@ name: Deployment pipeline
 
 on:
   push:
-    branches:
-      - 'master'
-
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   CLUSTER: dev-fss
@@ -45,13 +42,3 @@ jobs:
             <tr><td>dev-fss</td></tr>
             <tr><td>prod-fss</td></tr>
             </table>
-
-      - name: Deploy to Preprod
-        uses: nais/deploy/actions/deploy@v1
-        env:
-          TEAM: teamtag
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-fss
-          RESOURCE: naiserator.yaml
-          PRINT_PAYLOAD: true
-          VARS: nais/dev-fss.json
