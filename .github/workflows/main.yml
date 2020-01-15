@@ -32,7 +32,7 @@ jobs:
         uses: maxkomarychev/oction-create-issue@v0.7.1
         id: createdeployissue
         with:
-          token: ${{ secrets.NOTIFICATION }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: Deploy av ${{ env.TAG }}
           labels: deployment,${{env.CLUSTER}}
           body: |
