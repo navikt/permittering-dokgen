@@ -30,28 +30,13 @@ jobs:
           echo  ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} --password-stdin
           docker push ${IMAGE_BASE}   
     
-      - name: Opprett deployment issue
-        if: success()
-        uses: maxkomarychev/oction-create-issue@v0.7.1
-        id: createdeployissue
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          title: Deploy av ${{ env.TAG }}
-          labels: deployment,${{env.CLUSTER}}
-          body: |
-            Kommenter med <b>/promote ${{ env.TAG }} cluster</b>, hvor <b>cluster</b> er et gyldig clusternavn
-            <table>
-            <tr><th>Cluster</th></tr>
-            <tr><td>dev-fss</td></tr>
-            <tr><td>prod-fss</td></tr>
-            </table>
-
       - name: Deploy to Preprod
         uses: nais/deploy/actions/deploy@v1
         env:
           TEAM: teamtag
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
           CLUSTER: dev-fss
-          RESOURCE: naiserator.yaml
+          RESOURCE: naiserator-gha.yaml
           PRINT_PAYLOAD: true
           VARS: nais/dev-fss.json
+          VERSION: ${IMAGE}
