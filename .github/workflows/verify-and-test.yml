@@ -27,3 +27,6 @@ jobs:
 
       - name: Skriv ut image-navn
         run: echo $IMAGE
+        
+      - name: Test med up.sh
+        run: chmod +x *.sh && ./up.sh
