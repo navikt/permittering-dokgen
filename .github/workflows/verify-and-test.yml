@@ -25,5 +25,5 @@ jobs:
       - name: Lag image-navn
         run: echo "::set-env name=IMAGE::$IMAGE_BASE:$TAG"
 
-      -name: Skriv ut image-navn
-       run: echo $IMAGE
+      - name: Skriv ut image-navn
+        run: echo $IMAGE
