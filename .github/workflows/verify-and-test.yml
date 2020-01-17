@@ -1,0 +1,29 @@
+name: Verify and test all branches
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!master'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CLUSTER: dev-fss
+  IMAGE_BASE: docker.pkg.github.com/${{ github.repository }}/tag-dokgen
+  
+jobs:
+  kompiler:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Sjekk ut kode
+        uses: actions/checkout@v2
+     
+      - name: Hent tag
+        run: echo "::set-env name=TAG::$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)"
+        
+      - name: Lag image-navn
+        run: echo "::set-env name=IMAGE::$IMAGE_BASE:$TAG"
+
+      -name: Skriv ut image-navn
+       run: echo $IMAGE
