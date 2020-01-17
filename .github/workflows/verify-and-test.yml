@@ -19,14 +19,5 @@ jobs:
       - name: Sjekk ut kode
         uses: actions/checkout@v2
      
-      - name: Hent tag
-        run: echo "::set-env name=TAG::$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)"
-        
-      - name: Lag image-navn
-        run: echo "::set-env name=IMAGE::$IMAGE_BASE:$TAG"
-
-      - name: Skriv ut image-navn
-        run: echo $IMAGE
-        
       - name: Test med up.sh
         run: chmod +x *.sh && ./up.sh
