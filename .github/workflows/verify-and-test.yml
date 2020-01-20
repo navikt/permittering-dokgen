@@ -1,4 +1,4 @@
-name: Verify and test all branches
+name: Verify and test 
 
 on:
   push:
