@@ -21,3 +21,15 @@ jobs:
      
       - name: Test med up.sh
         run: chmod +x *.sh && ./up.sh
+
+      - name: Hent tag
+        run: echo "::set-env name=TAG::$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)"
+        
+      - name: Lag image-navn
+        run: echo "::set-env name=IMAGE::$IMAGE_BASE:$TAG"
+        
+      - name: Bygg, tag og push Docker image  
+        run: |
+          docker build --tag ${IMAGE} .
+          echo  ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} --password-stdin
+          docker push ${IMAGE_BASE}   
