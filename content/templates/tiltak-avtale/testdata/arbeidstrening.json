@@ -1,0 +1,41 @@
+{
+  "tiltakstype": "ARBEIDSTRENING",
+  "avtaleId": "ca3d7189-0852-4693-a3dd-d518b4ec42e4",
+  "avtaleVersjonId": "878c49f4-7225-4bb7-becf-a63b90a1baf7",
+  "deltakerFnr": "02018099999",
+  "bedriftNr": "999988881",
+  "veilederNavIdent": "X123456",
+  "opprettet": "2019-09-09",
+  "versjon": 2,
+  "deltakerFornavn": "Ronny",
+  "deltakerEtternavn": "Deltaker",
+  "deltakerTlf": "00000000",
+  "bedriftNavn": "Hansen AS",
+  "arbeidsgiverFornavn": "Ronnys",
+  "arbeidsgiverEtternavn": "Kremmer",
+  "arbeidsgiverTlf": "22334455",
+  "veilederFornavn": "Jan-Ronny",
+  "veilederEtternavn": "Veileder",
+  "veilederTlf": "33445566",
+  "oppfolging": "Telefon hver uke",
+  "tilrettelegging": "Ingen",
+  "startDato": "2019-01-01",
+  "sluttDato": "2019-02-02",
+  "stillingprosent": 100,
+  "maal": [
+    {
+      "kategori": "Få jobb i bedriften",
+      "beskrivelse": "Målet med arbeidstreningen er og få opplæring i arbeidsoppgaver knyttet til sjåførjobb, lære bedriften og kjenne og får den opplæringen du trenger for og kunne tre inn i stillings funksjonen når du har fått førerkortet. Det foreligger bekreftelse på lovnad om jobb dersom kriteriene er oppfylt i forhold til krav om førerkort."
+    }
+  ],
+  "arbeidsoppgaver": "- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs\n\n- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs\n\n- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs",
+  "godkjentPaVegneGrunn": {
+    "ikkeBankId": true,
+    "digitalKompetanse": true,
+    "reservert": true
+  },
+  "godkjentAvDeltaker": "2019-09-09",
+  "godkjentAvArbeidsgiver": "2019-10-09",
+  "godkjentAvVeileder": "2019-11-09",
+  "godkjentPaVegneAv": true
+}

@@ -75,6 +75,10 @@ tr {
     font-size: 14px;
 }
 
+pre {
+    font-size: 14px;
+}
+
 /*
 td {
     border: 1px solid black;

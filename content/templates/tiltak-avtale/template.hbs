@@ -1,0 +1,91 @@
+{{#if (eq tiltakstype "ARBEIDSTRENING")}}# Avtale om arbeidstrening{{/if}}
+{{#if (eq tiltakstype "MIDLERTIDIG_LONNSTILSKUDD")}}# Avtale om midlertidig lønnstilskudd{{/if}}
+{{#if (eq tiltakstype "VARIG_LONNSTILSKUDD")}}# Avtale om varig lønnstilskudd{{/if}}
+
+{{#if (neq versjon 1)}}Versjon: {{versjon}}{{/if}}
+
+Startdato: {{startDato}}<br/>
+Sluttdato: {{sluttDato}}
+
+### Avtalens parter
+---
+
+Deltaker
+<br/>
+**{{deltakerFornavn}} {{deltakerEtternavn}}** <br/>
+Fødselsnummer: {{deltakerFnr}} <br/>
+Telefon: {{deltakerTlf}} <br/>
+
+Arbeidsgiver<br/>
+**{{bedriftNavn}}** <br/>
+Kontaktperson: {{arbeidsgiverFornavn}} {{arbeidsgiverEtternavn}} <br/>
+Bedriftnr.: {{bedriftNr}} <br/>
+Telefon: {{arbeidsgiverTlf}} <br/>
+
+NAV-veileder <br/>
+**{{veilederFornavn}} {{veilederEtternavn}}**<br/>
+Telefon: {{veilederTlf}}
+
+{{#if maal}}
+### Mål
+---
+{{#each maal}}
+Kategori: {{kategori}} <br/>
+Beskrivelse: {{beskrivelse}}
+{{/each}}
+{{/if}}
+
+{{#if oppgaver}}
+### Arbeidsoppgaver
+---
+
+{{#each oppgaver}}
+Tittel: {{tittel}} <br/>
+Beskrivelse: {{beskrivelse}} <br/>
+Opplæring: {{opplaering}}
+{{/each}}
+{{/if}}
+
+### Stilling
+---
+Stillingsprosent: {{stillingprosent}}
+{{#if arbeidsoppgaver}}
+Arbeidsoppgaver:
+<pre>
+{{arbeidsoppgaver}}
+</pre>
+{{/if}}
+
+### Oppfølging
+---
+{{oppfolging}}
+
+### Tilrettelegging
+---
+{{tilrettelegging}}
+
+
+{{#if lonnstilskuddProsent}}
+### Tilskudd
+---
+Lønnstilskudd, prosent: {{lonnstilskuddProsent}} <br/>
+Månedslønn: {{manedslonn}} <br/>
+Feriepengesats: {{feriepengesats}} <br/>
+Arbeidsgiveravgift: {{arbeidsgiveravgift}} <br/>
+Arbeidsgivers kontonummer: {{arbeidsgiverKontonummer}}<br/>
+{{/if}}
+
+### Godkjenning
+---
+
+Godkjent av deltaker: {{godkjentAvDeltaker}} <br/>
+Godkjent av arbeidsgiver: {{godkjentAvArbeidsgiver}} <br/>
+Godkjent av NAV-veileder: {{godkjentAvVeileder}} <br/>
+{{#if godkjentPaVegneAv}}
+NB: Avtalen er godkjent av veileder på vegne av deltaker fordi:
+{{#with godkjentPaVegneGrunn}}
+{{#if ikkeBankId}}Deltaker ikke har BankID <br/>{{/if}}
+{{#if digitalKompetanse}}Deltaker ikke har digital kompetanse <br/>{{/if}}
+{{#if reservert}}Deltaker har reservert seg<br/>{{/if}}
+{{/with}}
+{{/if}}
