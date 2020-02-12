@@ -19,7 +19,7 @@ IMAGE_NAME=docker.pkg.github.com/navikt/tag-dokgen/tag-dokgen
 
 ## Forbereder deploy delen... greit å gjøre dette først om noe skulle feil.
 cp ./nais/dev-fss.json ./tmp/vars.json
-cat ./tmp/vars.json | jq --arg team teamtag '. + {team: $team}' | tee ./tmp/vars.json
+cat ./tmp/vars.json | jq --arg team arbeidsgiver '. + {team: $team}' | tee ./tmp/vars.json
 cat ./tmp/vars.json | jq --arg version $IMAGE_NAME:$RELEASE_VERSION '. + {version: $version}' | tee ./tmp/vars.json
 mustache ./tmp/vars.json ./naiserator.yaml > ./tmp/naiserator.yaml
 
