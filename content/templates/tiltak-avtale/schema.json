@@ -39,7 +39,8 @@
       "enum": [
         "ARBEIDSTRENING",
         "MIDLERTIDIG_LONNSTILSKUDD",
-        "VARIG_LONNSTILSKUDD"
+        "VARIG_LONNSTILSKUDD",
+        "MENTOR"
       ]
     },
     "avtaleId": {
@@ -488,6 +489,51 @@
       "title": "The arbeidsgiveravgift Schema",
       "examples": [
         14.1
+      ]
+    },
+    "mentorFornavn": {
+      "$id": "#/properties/mentorFornavn",
+      "type": ["string", "null"],
+      "title": "The Mentorfornavn Schema",
+      "default": "",
+      "examples": [
+        "Mia"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mentorEtternavn": {
+      "$id": "#/properties/mentorEtternavn",
+      "type": ["string", "null"],
+      "title": "The mentor etternavn Schema",
+      "default": "",
+      "examples": [
+        "Monsen"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mentorOppgaver": {
+      "$id": "#/properties/mentorOppgaver",
+      "type": ["string", "null"],
+      "title": "The mentor oppgaver Schema",
+      "examples": [
+        "Ta imot deltaker"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mentorAntallTimer": {
+      "$id": "#/properties/mentorAntallTimer",
+      "type": ["integer", "null"],
+      "title": "The mentor antall timer Schema",
+      "examples": [
+        40
+      ]
+    },
+    "mentorTimelonn": {
+      "$id": "#/properties/mentorTimelonn",
+      "type": ["integer", "null"],
+      "title": "The mentor timelønn Schema",
+      "examples": [
+        300
       ]
     }
   }

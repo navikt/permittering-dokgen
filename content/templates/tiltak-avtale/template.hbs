@@ -1,6 +1,7 @@
 {{#if (eq tiltakstype "ARBEIDSTRENING")}}# Avtale om arbeidstrening{{/if}}
 {{#if (eq tiltakstype "MIDLERTIDIG_LONNSTILSKUDD")}}# Avtale om midlertidig lønnstilskudd{{/if}}
 {{#if (eq tiltakstype "VARIG_LONNSTILSKUDD")}}# Avtale om varig lønnstilskudd{{/if}}
+{{#if (eq tiltakstype "MENTOR")}}# Avtale om tilskudd til mentor{{/if}}
 
 {{#if (neq versjon 1)}}Versjon: {{versjon}}{{/if}}
 
@@ -25,6 +26,18 @@ Telefon: {{arbeidsgiverTlf}} <br/>
 NAV-veileder <br/>
 **{{veilederFornavn}} {{veilederEtternavn}}**<br/>
 Telefon: {{veilederTlf}}
+
+{{#if (eq tiltakstype "MENTOR")}}
+### Om mentoren<br/>
+---
+**{{mentorFornavn}} {{mentorEtternavn}}**<br/>
+
+**Arbeidsoppgaver:**<br/>
+{{mentorOppgaver}}<br/>
+
+Antall timer: {{mentorAntallTimer}}<br/>
+Timelønn: {{mentorTimelonn}}
+{{/if}}
 
 {{#if maal}}
 ### Mål

@@ -1,41 +1,59 @@
 {
   "tiltakstype": "ARBEIDSTRENING",
-  "avtaleId": "ca3d7189-0852-4693-a3dd-d518b4ec42e4",
-  "avtaleVersjonId": "878c49f4-7225-4bb7-becf-a63b90a1baf7",
-  "deltakerFnr": "02018099999",
-  "bedriftNr": "999988881",
-  "veilederNavIdent": "X123456",
-  "opprettet": "2019-09-09",
-  "versjon": 2,
-  "deltakerFornavn": "Ronny",
-  "deltakerEtternavn": "Deltaker",
-  "deltakerTlf": "00000000",
-  "bedriftNavn": "Hansen AS",
-  "arbeidsgiverFornavn": "Ronnys",
-  "arbeidsgiverEtternavn": "Kremmer",
-  "arbeidsgiverTlf": "22334455",
-  "veilederFornavn": "Jan-Ronny",
-  "veilederEtternavn": "Veileder",
-  "veilederTlf": "33445566",
-  "oppfolging": "Telefon hver uke",
-  "tilrettelegging": "Ingen",
-  "startDato": "2019-01-01",
-  "sluttDato": "2019-02-02",
-  "stillingprosent": 100,
-  "maal": [
-    {
-      "kategori": "Få jobb i bedriften",
-      "beskrivelse": "Målet med arbeidstreningen er og få opplæring i arbeidsoppgaver knyttet til sjåførjobb, lære bedriften og kjenne og får den opplæringen du trenger for og kunne tre inn i stillings funksjonen når du har fått førerkortet. Det foreligger bekreftelse på lovnad om jobb dersom kriteriene er oppfylt i forhold til krav om førerkort."
-    }
-  ],
-  "arbeidsoppgaver": "- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs\n\n- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs\n\n- Lagerarbeid\nBeskrivelse: Rydde på lageret\nOpplæring: Ryddekurs",
+  "avtaleId": "79001b47-6b3a-43bd-b548-d114ed8965f6",
+  "avtaleVersjonId": "9f17ac5f-6a3e-47b6-828e-590de574250e",
+  "deltakerFnr": "24096122116",
+  "bedriftNr": "910825518",
+  "veilederNavIdent": "Z992785",
+  "opprettet": "2020-02-03",
+  "deltakerFornavn": "Jan",
+  "deltakerEtternavn": "Banan",
+  "deltakerTlf": "67676767",
+  "bedriftNavn": "Maura og Kolbu regnskap",
+  "arbeidsgiverFornavn": "Knut",
+  "arbeidsgiverEtternavn": "Knutsen",
+  "arbeidsgiverTlf": "56565656",
+  "veilederFornavn": "Berit",
+  "veilederEtternavn": "Berntsen",
+  "veilederTlf": "78787877",
+  "oppfolging": "Følge opp",
+  "tilrettelegging": "Legget til rette",
+  "stillingprosent": 70,
+  "versjon": 1,
+  "mentorFornavn": null,
+  "mentorEtternavn": null,
+  "mentorOppgaver": null,
+  "mentorAntallTimer": null,
+  "mentorTimelonn": null,
   "godkjentPaVegneGrunn": {
     "ikkeBankId": true,
-    "digitalKompetanse": true,
-    "reservert": true
+    "reservert": false,
+    "digitalKompetanse": false
   },
-  "godkjentAvDeltaker": "2019-09-09",
-  "godkjentAvArbeidsgiver": "2019-10-09",
-  "godkjentAvVeileder": "2019-11-09",
+  "arbeidsgiverKontonummer": null,
+  "stillingstype": null,
+  "arbeidsoppgaver": null,
+  "lonnstilskuddProsent": null,
+  "manedslonn": null,
+  "feriepengesats": null,
+  "arbeidsgiveravgift": null,
+  "sluttDato": "2020-02-24",
+  "startDato": "2020-02-10",
+  "maal": [
+    {
+      "kategori": "Språkopplæring",
+      "beskrivelse": "Lære et nytt språk"
+    }
+  ],
+  "oppgaver": [
+    {
+      "tittel": "Tolke",
+      "beskrivelse": "Tolke fra ett språk til annet",
+      "opplaering": "Se mål"
+    }
+  ],
+  "godkjentAvDeltaker": "2020-02-03",
+  "godkjentAvArbeidsgiver": "2020-02-03",
+  "godkjentAvVeileder": "2020-02-03",
   "godkjentPaVegneAv": true
 }
