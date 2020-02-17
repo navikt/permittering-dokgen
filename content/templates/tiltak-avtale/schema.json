@@ -292,7 +292,7 @@
             "examples": [
               "Målet med arbeidstreningen er og få opplæring i arbeidsoppgaver knyttet til sjåførjobb, lære bedriften og kjenne og får den opplæringen du trenger for og kunne tre inn i stillings funksjonen når du har fått førerkortet. Det foreligger bekreftelse på lovnad om jobb dersom kriteriene er oppfylt i forhold til krav om førerkort."
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^([\\s\\S]*)$"
           }
         }
       }
@@ -329,7 +329,7 @@
             "examples": [
               "Vi skal lære henne bestille varer fra leverandører og besøker de slik hun få erfaring på det"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^([\\s\\S]*)$"
           },
           "opplaering": {
             "$id": "#/properties/oppgaver/items/properties/opplaering",
@@ -339,7 +339,7 @@
             "examples": [
               "Opplæring i kasse og kundebehandling"
             ],
-            "pattern": "^(.*)$"
+            "pattern": "^([\\s\\S]*)$"
           }
         }
       }
@@ -518,7 +518,7 @@
       "examples": [
         "Ta imot deltaker"
       ],
-      "pattern": "^(.*)$"
+      "pattern": "^([\\s\\S]*)$"
     },
     "mentorAntallTimer": {
       "$id": "#/properties/mentorAntallTimer",
