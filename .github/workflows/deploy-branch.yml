@@ -7,12 +7,12 @@ env:
   IMAGE_BASE: docker.pkg.github.com/${{ github.repository }}/tag-dokgen
       
 jobs:
-  promote:
+  deploy-branch:
     runs-on: ubuntu-latest
     
     steps:
        
-      - name: Set variabler for image, namespace og cluster
+      - name: Sett variabler for image, namespace og cluster
         run: |
            echo "::set-env name=TAG::$(echo ${{ github.event.client_payload.slash_command.arg1 }} | cut -c16-22)"  
            echo "::set-env name=IMAGE::$IMAGE_BASE:${{ github.event.client_payload.slash_command.arg1 }}" 
@@ -38,7 +38,7 @@ jobs:
         if: failure()
         uses: actions/github-script@0.4.0
         with:
-          github-token: ${{secrets.NOTIFICATION}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const issue = { owner: context.issue.owner,
                             repo: context.issue.repo,
@@ -46,7 +46,7 @@ jobs:
             github.issues.createComment({...issue,
                                     title: 'Deploy av ${{ env.TAG }}',
                                     body: '>deploy ${{ github.event.client_payload.slash_command.args }} feilet'})
-            github.issues.addLabels({...issue, labels: ['deployment-failed','dev-fss'])
+            github.issues.addLabels({...issue, labels: ['deployment-failed','dev-fss']})
    
       - name: Oppdater kommentar med deployment status
         if: success()
