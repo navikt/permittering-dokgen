@@ -98,6 +98,10 @@ td {
   width: 150px;
 }
 
+.td03 {
+    width: 300px;
+}
+
 .bold {
     font-weight: 700;
 }

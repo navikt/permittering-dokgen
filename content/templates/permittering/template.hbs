@@ -1,27 +1,56 @@
 # {{type}}
 
-**Bedrift:** </br> {{bedriftNavn}}<br/>
-**Bedriftnummer:** </br> {{bedriftsnummer}} </br>
 
-</br>
+## Kontaktinformasjon
 
-**Kontaktperson:** {{kontaktNavn}} </br>
-**Telefonnummer:** {{kontaktTlf}} </br>
-**E-post:** {{kontaktEpost}} <br/>
+<table>
+    <tr >
+        <td class="td02">Bedrift:</td>
+        <td>{{bedriftNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Bedriftsnummer:</td>
+        <td>{{bedriftsnummer}} </td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Kontaktperson:</td>
+        <td>{{kontaktNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Telefonnummer:</td>
+        <td> {{kontaktTlf}} </td>
+    </tr>
+        <tr>
+        <td class="td02">E-post:</td>
+        <td> {{kontaktEpost}} </td>
+    </tr>
+</table>
+
+
+<br/>
 <br/>
 
----
 
-<br/>
+## Generelle opplysninger
 
-**Antall arbeidstakere som vil kunne bli berørt:** {{antallBerorte}}</br>
+<table>
+    <tr>
+        <td class="td03">Antall arbeidstakere som vil kunne bli berørt:</td>
+        <td>{{antallBerorte}} </td>
+    </tr>
+    <tr>
+        <td class="td03">Permitteringene vil finne sted fra:</td>
+        <td> {{startDato}} </td>
+    </tr>
+        <tr>
+        <td class="td03">Permitteringene vil vare til:</td>
+        <td> {{#if sluttDato}} {{sluttDato}} {{else}} Vet ikke hvor lenge de vil vare {{/if}} </td>
+    </tr>
+</table>
 
-</br>
 
-**Permitteringene vil finne sted fra:** {{startDato}} </br>
-**Permitteringene vil vare til:** {{#if sluttDato}} {{sluttDato}} {{else}} Vet ikke hvor lenge de vil vare {{/if}}</br>
-
-</br>
-
-**Generelle opplysninger:** <br/> {{fritekst}}
+{{fritekst}}
 
