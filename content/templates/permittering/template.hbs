@@ -7,7 +7,7 @@
 ## Kontaktinformasjon
 
 <table>
-    <tr >
+    <tr>
         <td class="td02">Bedrift:</td>
         <td>{{bedriftNavn}} </td>
     </tr>
@@ -16,7 +16,7 @@
         <td>{{bedriftsnummer}} </td>
     </tr>
 </table>
-<br/>
+<br />
 <table>
     <tr>
         <td class="td02">Kontaktperson:</td>
@@ -26,15 +26,15 @@
         <td class="td02">Telefonnummer:</td>
         <td> {{kontaktTlf}} </td>
     </tr>
-        <tr>
+    <tr>
         <td class="td02">E-post:</td>
         <td> {{kontaktEpost}} </td>
     </tr>
 </table>
 
 
-<br/>
-<br/>
+<br />
+<br />
 
 
 ## Generelle opplysninger
@@ -48,10 +48,15 @@
         <td class="td03">Permitteringene vil finne sted fra:</td>
         <td> {{startDato}} </td>
     </tr>
-        <tr>
+    <tr>
         <td class="td03">Permitteringene vil vare til:</td>
         <td> {{#if sluttDato}} {{sluttDato}} {{else}} Vet ikke hvor lenge de vil vare {{/if}} </td>
     </tr>
+    <tr>
+        <td class="td03">Tidspunkt for innsending:</td>
+        <td> {{sendtInnTidspunkt}} </td>
+    </tr>
+
 </table>
 
 
