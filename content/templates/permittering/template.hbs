@@ -1,5 +1,5 @@
 # {{#eq type 'PERMITTERING_UTEN_LØNN'}} PERMITTERING UTEN LØNN {{/eq}}
-# {{#eq type 'MASSEPERMITTERING'}} MASSEPERMITTERING {{/eq}}
+# {{#eq type 'MASSEOPPSIGELSE'}} MASSEOPPSIGELSE {{/eq}}
 # {{#eq type 'INNSKRENKNING_I_ARBEIDSTID'}} INNSKRENKNING I ARBEIDSTID {{/eq}}
 
 
@@ -45,11 +45,11 @@
         <td>{{antallBerorte}} </td>
     </tr>
     <tr>
-        <td class="td03">Permitteringene vil finne sted fra:</td>
+        <td class="td03"> {{#eq type 'PERMITTERING_UTEN_LØNN'}}Permitteringene vil finne sted fra:{{/eq}} {{#neq type 'PERMITTERING_UTEN_LØNN'}}Fra dato:{{/neq}}</td>
         <td> {{startDato}} </td>
     </tr>
     <tr>
-        <td class="td03">Permitteringene vil vare til:</td>
+        <td class="td03">{{#eq type 'PERMITTERING_UTEN_LØNN'}}Permitteringene vil vare til:{{/eq}} {{#neq type 'PERMITTERING_UTEN_LØNN'}}Til dato:{{/neq}}</td>
         <td> {{#if sluttDato}} {{sluttDato}} {{else}} Vet ikke hvor lenge de vil vare {{/if}} </td>
     </tr>
     <tr>
