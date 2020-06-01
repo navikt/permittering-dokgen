@@ -102,6 +102,10 @@ td {
     width: 300px;
 }
 
+.td350 {
+    width: 350px;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -109,3 +113,21 @@ td {
 .new_page {
     page-break-before: always;
 }
+
+.error-circle {
+    height: 50%;
+    padding: 0px 6px;
+    background-color: #ff6161;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+  }
+
+  .stor-tekst {
+      font-size: 18px;
+      font-weight: 600;
+  }
+
+  .font-size-13{
+      font-size: 13px;
+  }

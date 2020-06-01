@@ -1,0 +1,39 @@
+{
+  "id": "01E9NTE8C4B7K96GZPMAKGP8ZT",
+  "datoMottattPdf": "2020-05-31",
+  "bedriftNavn": "SPENNENDE ELEKTRO",
+  "bedriftNr": "123456789",
+  "kontaktNavn": "Gran Granli",
+  "kontaktTlf": "44556677",
+  "kontaktEpost": "gran@spennendeelektro.no",
+  "summertRefusjonsbelop": "36000.00",
+  "arbeidsforhold": [
+    {
+      "fnr": "10987654321",
+      "dagsats": "1000.00",
+      "navn": "Furu Furuset",
+      "permitteringsprosent": "100.0",
+      "periode": "2020-04-01 - 2020-04-10",
+      "refusjonsbeløp": "8000.00",
+      "overstiger6G": ""
+    },
+    {
+      "fnr": "56789101112",
+      "dagsats": "2000.00",
+      "navn": "Furu Furuset",
+      "permitteringsprosent": "100.0",
+      "periode": "2020-04-01 - 2020-04-10",
+      "refusjonsbeløp": "16000.00",
+      "overstiger6G": ""
+    },
+    {
+      "fnr": "34567891011",
+      "navn": "Furu Furuset",
+      "dagsats": "1500.00",
+      "permitteringsprosent": "100.0",
+      "periode": "2020-04-01 - 2020-04-10",
+      "refusjonsbeløp": "12000.00",
+      "overstiger6G": ""
+    }
+  ]
+}

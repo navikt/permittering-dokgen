@@ -1,0 +1,118 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{datoMottattPdf}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Virksomhet:</td>
+        <td>{{bedriftNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Bedriftsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+</table>
+
+
+<br/>
+<br/>
+
+# Dere har fått refusjon
+
+Basert på opplysninger fra dere har vi refundert <b>{{summertRefusjonsbelop}}</b> kr for forskuttert lønn for permitterte ansatte. Beløpet er avrundet til nærmeste krone.
+
+Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon § 9. Les mer om lønnskompensasjon i forskriften her.
+
+Se vedlegg for detaljer og oversikt over ansatte som inngår i vedtaket.
+
+### Dere har rett til å klage på dette vedtaket
+Dere kan klage innen 6 uker fra du mottar dette vedtaket. Klagen skal være skriftlig. Dere finner informasjon om klage på Min side – arbeidsgiver.
+
+### Har du spørsmål?
+Dere finner mer informasjon på arbeidsgiver.nav.no/arbeidsgiver-permittering. Har dere spørsmål kan dere kontakte oss på telefon 55 55 33 36.
+
+
+Vennlig hilsen
+
+NAV
+
+
+Dette vedtaket har blitt automatisk saksbehandlet. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Vedlegg: Grunnlag for vedtaket
+
+### Informasjon om søkeren
+<table>
+    <tr>
+        <td class="td02">Innrapportert fra:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td class="td02">Bedriftsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+    <tr>
+        <td class="td02">Kontaktperson:</td>
+        <td>{{kontaktNavn}}</td>
+    </tr>
+    <tr>
+        <td class="td02">Telefonnummer:</td>
+        <td>{{kontaktTlf}}</td>
+    </tr>
+    <tr>
+        <td class="td02">E-post:</td>
+        <td>{{kontaktEpost}}</td>
+    </tr>
+</table>
+
+## Informasjon om refusjonen
+
+<table border="1">
+    <tr>
+        <th>Fødselsnummer</th>
+        <th>Navn</th>
+        <th>Lønn per dag</th>
+        <th>Permitterings- prosent</th>
+        <th>Periode</th>
+        <th>Refusjon til deres virksomhet</th>
+        <th>Avkortet 6G</th>
+    </tr>
+    <!-- {{#each arbeidsforhold}} -->
+    <tr>
+        <td>{{this.fnr}}</td>
+        <td>{{this.navn}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsprosent}}</td>
+        <td>{{this.periode}}</td>
+        <td>{{this.refusjonsbeløp}} kr</td>
+        <td>{{this.overstiger6G}}</td>
+    </tr>
+    <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="4">Sum</td>
+        <td><b>{{summertRefusjonsbelop}} kr</b></td>
+    </tr>
+</table>

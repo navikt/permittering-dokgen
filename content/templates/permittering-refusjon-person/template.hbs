@@ -1,0 +1,122 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{datoMottattPdf}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Navn:</td>
+        <td>{{navn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Fødselsnummer:</td>
+        <td>{{fnr}}</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+## Du vil få utbetalt kompensasjon for lønn under permittering
+<br/>
+
+Du har rett på <b>{{totalKompensasjon}} kr</b> i kompensasjon for lønn fra NAV.
+Du vil få utbetalt et mindre beløp enn dette, fordi vi trekker skatt av utbetalingen.
+Vi utbetaler pengene etter ca. tre virkedager, til den kontoen du har registrert hos oss.
+Du finner detaljene om hvordan vi har beregnet beløpet lenger nede.
+<br/>
+
+#### Bakgrunnen for vedtaket
+De to første dagene etter at du ble permittert har arbeidsgiver ansvar for lønnen din.
+NAV skal dekke lønnen din fra og med tredje dag etter at du ble permittert og i maksimalt 18 dager.
+
+For å komme fram til beløpet du får utbetalt fra oss, har vi lagt til grunn opplysninger som arbeidsgiveren din har rapportert inn.
+<br/>
+
+Vi har tatt hensyn til
+<ul class="font-size-13">
+<li>tidspunktet du ble permittert. Denne ordningen gjelder fra og med 20. mars. Ble du permittert før dette, skal arbeidsgiver dekke lønnen din minst fram til og med 19. mars.</li>
+
+<li>hva arbeidsgiver har utbetalt til deg allerede.  Dersom arbeidsgiver har utbetalt lønn til deg i perioden, vil vi refundere dette til arbeidsgiver. Beløp vi har refundert til arbeidsgiver går fram av tabellen under.</li>
+
+<li>om inntekten din er høyere enn 6G (1G = grunnbeløpet i folketrygden). NAV dekker kun lønn opp til 6G, som per i dag utgjør en årslønn på 599 148 kr.</li>
+
+<li>de dagene du har jobbet mens du var permittert. Utbetalingene fra NAV blir redusert disse dagene.</li>
+
+<li>om du har fått utbetalt omsorgspenger eller sykepenger mens du var permittert. Utbetalingene fra NAV blir redusert disse dagene.</li>
+</ul>
+
+<br/>
+
+Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon. <a href="https://lovdata.no/dokument/SF/forskrift/2020-05-29-1102">Les mer om lønnskompensasjon i forskriften her.</a>
+
+#### Her finner du detaljene for beregningen
+Vi har basert vedtaket på opplysninger fra arbeidsgiveren din.
+<table>
+    <tr>
+        <td>Innrapportert fra:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td>Organisasjonsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+</table>
+<br/>
+<p>
+    Startdato permittering (dag 1): {{fom}}<br/>
+    Sluttdato periode (dag 20): {{tom}}
+</p>
+
+For å komme fram til beløpet du får utbetalt, har arbeidsgiver rapportert hva lønnen din er per dag.
+Hvis du har spørsmål om hvordan lønn per dag er regnet ut, må du kontakte din arbeidsgiver.
+
+Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
+
+<br/>
+
+<table border="1">
+    <tr>
+        <th>Dato</th>
+        <th>Lønn per dag</th>
+        <th>Permitterings- prosent</th>
+        <th>Refundert til arbeidsgiver</th>
+        <th>Avkorting 6G</th>
+        <th>Lønn før skatt</th>
+        <th></th>
+    </tr>
+        <!-- {{#each dagBeregninger}} -->
+    <tr>
+        <td>{{this.dato}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.refusjonssbeløp}}</td>
+        <td>{{this.overstiger6G}}</td>
+        <td>{{this.lønnskompensasjonsbeløp}}</td>
+        <td>{{this.dagtype}}</td>
+    </tr>
+        <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="5">Sum</td>
+        <td><b>{{totalKompensasjon}}</b></td>
+    </tr>
+</table>
+
+#### Du har rett til å klage på dette vedtaket
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig. Du finner skjema og informasjon på <a href="https://www.nav.no/klage">www.nav.no/klage</a>.
+<br/>
+#### Kontonummer
+Har du ikke registrert kontonummer hos oss? <a href="https://www.nav.no">Les mer om hvordan du gjør det på www.nav.no</a>.
+#### Har du spørsmål?
+Du finner mer informasjon om lønnskompensasjon på www.nav.no. Har du spørsmål, se hvordan du kan kontakte oss på <a href="https://www.nav.no/kontakt">www.nav.no/kontakt</a>.
+
+Vennlig hilsen<br/>
+NAV
+<br/><br/>
+Dette vedtaket har blitt automatisk saksbehandlet. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.
