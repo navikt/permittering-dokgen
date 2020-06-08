@@ -1,7 +1,6 @@
 {
   "id": "01E9NTE8C4B7K96GZPMAKGP8ZT",
-  "datoMottattPdf": "2020-05-31",
-  "navn": "Furu Furuset",
+  "navn": "Shania Twain",
   "fnr": "10987654321",
   "totalKompensasjon": "10000.00",
   "startDatoPdf": "2020-04-13",
@@ -13,7 +12,7 @@
   "dagBeregninger": [
     {
       "dato": "2020-03-30",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -22,7 +21,7 @@
     },
     {
       "dato": "2020-03-31",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -31,7 +30,7 @@
     },
     {
       "dato": "2020-04-01",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -40,7 +39,7 @@
     },
     {
       "dato": "2020-04-02",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -49,7 +48,7 @@
     },
     {
       "dato": "2020-04-03",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -58,7 +57,7 @@
     },
     {
       "dato": "2020-04-04",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -67,7 +66,7 @@
     },
     {
       "dato": "2020-04-05",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -76,7 +75,7 @@
     },
     {
       "dato": "2020-04-06",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -85,7 +84,7 @@
     },
     {
       "dato": "2020-04-07",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -94,7 +93,7 @@
     },
     {
       "dato": "2020-04-08",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -103,7 +102,7 @@
     },
     {
       "dato": "2020-04-09",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -112,7 +111,7 @@
     },
     {
       "dato": "2020-04-10",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
@@ -121,7 +120,7 @@
     },
     {
       "dato": "2020-04-11",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -130,7 +129,7 @@
     },
     {
       "dato": "2020-04-12",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -139,7 +138,7 @@
     },
     {
       "dato": "2020-04-13",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -148,7 +147,7 @@
     },
     {
       "dato": "2020-04-14",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -157,7 +156,7 @@
     },
     {
       "dato": "2020-04-15",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -166,7 +165,7 @@
     },
     {
       "dato": "2020-04-16",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -175,7 +174,7 @@
     },
     {
       "dato": "2020-04-17",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -184,7 +183,7 @@
     },
     {
       "dato": "2020-04-18",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -193,7 +192,7 @@
     },
     {
       "dato": "2020-04-19",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -202,7 +201,7 @@
     },
     {
       "dato": "2020-04-20",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -211,7 +210,7 @@
     },
     {
       "dato": "2020-04-21",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -220,7 +219,7 @@
     },
     {
       "dato": "2020-04-22",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -229,7 +228,7 @@
     },
     {
       "dato": "2020-04-23",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
@@ -238,7 +237,7 @@
     },
     {
       "dato": "2020-04-24",
-      "dagsats": "1000.00",
+      "dagsats": "1000.0",
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "-",
