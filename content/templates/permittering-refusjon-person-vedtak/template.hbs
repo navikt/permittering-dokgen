@@ -29,38 +29,55 @@
 Du har rett på <b>{{totalKompensasjon}} kr</b> i kompensasjon for lønn fra NAV.
 Du vil få utbetalt et mindre beløp enn dette, fordi vi trekker skatt av utbetalingen.
 Vi utbetaler innen 3 virkedager etter at du har mottatt dette brevet.
+<br/>
 Du finner detaljene om hvordan vi har beregnet beløpet lenger ned i brevet.
 <br/>
 
 #### Bakgrunnen for vedtaket
+<br/>
 De to første dagene etter at du ble permittert har arbeidsgiver ansvar for lønnen din.
-NAV skal dekke lønnen din fra og med tredje dag etter at du ble permittert og i maksimalt 18 dager.
+NAV skal dekke lønnen din fra og med tredje dag etter at du ble permittert og i maksimalt 18 dager unntatt lørdag og søndag.
 
-For å komme fram til beløpet du får utbetalt fra oss, har vi lagt til grunn opplysninger som arbeidsgiveren din har rapportert inn og endringene du har foretatt.
+For å komme fram til beløpet du får utbetalt fra oss, har vi lagt til grunn opplysninger fra søknaden din.
 <br/>
 
 Vi har tatt hensyn til
 <ul class="font-size-13">
-<li>tidspunktet du ble permittert. Denne ordningen gjelder fra og med 20. mars. Ble du permittert før dette, skal arbeidsgiver dekke lønnen din minst fram til og med 19. mars.</li>
-
-<li>hva arbeidsgiver har utbetalt til deg allerede.  Dersom arbeidsgiver har utbetalt lønn til deg i perioden, vil vi refundere dette til arbeidsgiver. Beløp vi har refundert til arbeidsgiver går fram av tabellen under.</li>
-
-<li>om inntekten din er høyere enn 6G (1G = grunnbeløpet i folketrygden). NAV dekker kun lønn opp til 6G, som per i dag utgjør en årslønn på 599 148 kr.</li>
-
-<li>de dagene du har jobbet mens du var permittert. Utbetalingene fra NAV blir redusert disse dagene.</li>
-
-<li>om du har fått utbetalt omsorgspenger eller sykepenger mens du var permittert. Utbetalingene fra NAV blir redusert disse dagene.</li>
+    <li>tidspunktet du ble permittert. Denne ordningen gjelder fra og med 20. mars. Ble du permittert før dette, skal
+        arbeidsgiver dekke lønnen din minst fram til og med 19. mars.</li>
+    <li>innrapportert lønn fra din arbeidsgiver til skatteetaten gjennom a-ordningen</li>
+    <li>om inntekten din er høyere enn 6G (1G = grunnbeløpet i folketrygden). NAV dekker kun lønn opp til 6G, som per i
+        dag utgjør en årslønn på 599 148 kr.</li>
+    <li>de dagene du har jobbet mens du var permittert. Utbetalingene fra NAV blir redusert disse dagene.</li>
+    <li>om du har oppgitt om du har fått utbetalt omsorgspenger, sykepenger, foreldrepenger eller pleiepenger mens du
+        var permittert. Utbetalingene fra NAV blir redusert disse dagene</li>
 </ul>
 
 <br/>
+<p>
+Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon. <a
+        href="https://lovdata.no/dokument/SF/forskrift/2020-05-29-1102">Les mer om lønnskompensasjon i forskriften
+    her.</a>
 
-Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon. <a href="https://lovdata.no/dokument/SF/forskrift/2020-05-29-1102">Les mer om lønnskompensasjon i forskriften her.</a>
+</p>
+<!-- Linjeskiftene her for å få beregning på side 2 -->
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 #### Her finner du detaljene for beregningen
+
 Vi har basert vedtaket på opplysninger fra arbeidsgiveren din.
 <table>
     <tr>
-        <td>Innrapportert fra:</td>
+        <td>Arbeidsgiver:</td>
         <td>{{bedriftNavn}}</td>
     </tr>
     <tr>
@@ -71,24 +88,42 @@ Vi har basert vedtaket på opplysninger fra arbeidsgiveren din.
 <br/>
 <p>
     Startdato permittering (dag 1): {{fom}}<br/>
-    Sluttdato periode (dag 20): {{tom}}
+    Sluttdato periode: {{tom}}
 </p>
-
 <p>
-For å komme fram til beløpet du får utbetalt, har NAV hentet dine tre siste månedsinntekter fra skatteetaten og regnet ut en gjennomsnittsdagslønn.
+    Vi har beregnet lønnskompensasjon basert på din lønn for minst de siste tre månedene før permitteringen startet.
+    Disse opplysninger er hentet fra Skatteetaten:
+<table>
+        <!-- {{#each lonninger}} -->
+        <tr>
+            <td>{{this.maned}}</td>
+            <td>{{this.lonn}}</td>
+        </tr>
+        <!-- {{/each}} -->
+    <tr>
+        <td style="border-top: 1px solid">Gjennomsnittlig månedslønn:</td>
+        <td style="border-top: 1px solid">{{snittlonn}}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid">Dette gir en gjennomsnittlig dagslønn på:</td>
+        <td style="border-bottom: 1px solid">{{dagsats}}</td>
+    </tr>
+</table>
+<br/>
+NAV beregner at det er i snitt 21,67 arbeidsdager i måneden.
+
 Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
 </p>
-<br>
+<br/>
 <br/>
 
 <table border="1">
     <tr>
         <th>Dato</th>
         <th>Lønn per dag</th>
-        <th>Permitterings- prosent</th>
+        <th>Permitteringsgrad</th>
         <th>Avkorting 6G</th>
         <th>Lønn før skatt</th>
-        <th></th>
     </tr>
         <!-- {{#each dagBeregninger}} -->
     <tr>
@@ -97,7 +132,6 @@ Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobbe
         <td>{{this.permitteringsgrad}}</td>
         <td>{{this.overstiger6G}}</td>
         <td>{{this.lønnskompensasjonsbeløp}}</td>
-        <td>{{this.dagtype}}</td>
     </tr>
         <!-- {{/each}} -->
     <tr>
@@ -107,13 +141,19 @@ Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobbe
 </table>
 
 #### Du har rett til å klage
-Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via <a href="https://www.nav.no/person/kontakt-oss/nb/skriv-til-oss">www.nav.no/skrivtiloss</a>, og velge tema «Jobbsøker».
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via
+<a href="https://www.nav.no/person/kontakt-oss/nb/skriv-til-oss">www.nav.no/skrivtiloss</a>, og velge tema «Jobbsøker».
 <br/>
 #### Kontonummer
 Har du ikke registrert kontonummer hos oss, kan du gjøre det på <a href="https://www.nav.no/kontonummer">www.nav.no/kontonummer</a>.
 
+#### Har du søkt om dagpenger?
+Hvis du har søkt om dagpenger vil du få et eget vedtak om dette.
+
 #### Har du fått forskudd på dagpenger?
-Hvis du har fått forskudd på dagpenger, er ikke dette trukket av utbetalingen. <a href="https://www.nav.no/no/person/innhold-til-person-forside/nyttig-a-vite/kampanje-korona/forskudd-pa-dagpenger-for-permitterte-og-arbeidsledige#chapter-8">Les mer om hvordan du kan betale tilbake forskuddet på www.nav.no</a>.
+Hvis du har fått forskudd på dagpenger, er ikke dette trukket av utbetalingen. <a
+        href="https://www.nav.no/no/person/innhold-til-person-forside/nyttig-a-vite/kampanje-korona/forskudd-pa-dagpenger-for-permitterte-og-arbeidsledige#chapter-8">Les
+    mer om hvordan du kan betale tilbake forskuddet på www.nav.no</a>.
 
 #### Har du spørsmål?
 Du finner mer informasjon på <a href="https://www.nav.no/lønnskompensasjon">www.nav.no/lønnskompensasjon</a>.

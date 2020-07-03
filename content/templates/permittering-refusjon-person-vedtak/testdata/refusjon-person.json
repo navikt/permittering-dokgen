@@ -2,13 +2,21 @@
   "id": "01E9NTE8C4B7K96GZPMAKGP8ZT",
   "navn": "Shania Twain",
   "fnr": "10987654321",
-  "totalKompensasjon": "10000.00",
+  "totalKompensasjon": "18000.00",
   "startDatoPdf": "2020-04-13",
   "sluttDatoPdf": "2020-04-24",
+  "datoSendt": "3. juli 2020",
   "bedriftNavn": "SPENNENDE ELEKTRO",
   "bedriftNr": "123456789",
   "fom": "2020-03-30",
   "tom": "2020-04-24",
+  "lonninger": [
+    { "maned": "Januar 2020", "lonn": 21670 },
+    { "maned":  "Februar 2020", "lonn": 20000 },
+    { "maned":  "Mars 2020", "lonn":  23340 }
+  ],
+  "snittlonn": 21670,
+  "dagsats": 1000,
   "dagBeregninger": [
     {
       "dato": "2020-03-30",
@@ -34,7 +42,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -43,7 +51,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -52,7 +60,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -79,7 +87,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -88,7 +96,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -97,7 +105,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -106,7 +114,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
@@ -115,7 +123,7 @@
       "permitteringsgrad": "100.0",
       "overstiger6G": "",
       "refusjonssbeløp": "1000.00",
-      "lønnskompensasjonsbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
       "dagtype": "Refusjon"
     },
     {
