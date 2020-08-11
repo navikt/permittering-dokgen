@@ -1,0 +1,270 @@
+{
+  "id": "01EF18FS6ZJJ825JCSPEZYTTAQ",
+  "navn": "Line Jensen",
+  "fnr": "01010199999",
+  "innsendtDato": "2020-08-07T06:08:53.611961Z",
+  "bedriftNavn": "Bare Rør AS",
+  "bedriftNr": "123456789",
+  "vedlegg": [
+    {
+      "storageKey": "123",
+      "filename": "mitt_vedlegg.pdf",
+      "type": "PERMITTERINGSVARSEL"
+    }
+  ],
+  "permitteringsgrunnlag": {
+    "permitteringsgrunnlagPerioder": [
+      {
+        "fraDato": "2020-03-30",
+        "tilDato": null,
+        "permitteringsgrad": 45
+      }
+    ]
+  },
+  "inntektsgrunnlag": {
+      "inntektsgrunnlagPerioder": [
+          { "årMåned":"2020-05","beløp":12 },
+          { "årMåned":"2020-06","beløp":43 }
+      ]
+  },
+  "sakId": "01EF18FS6Z6GZB5KEANN12Y8ZS",
+  "sakstype": null,
+  "dagBeregninger": [
+    {
+      "dato": "2020-03-30",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Lønnsplikt"
+    },
+    {
+      "dato": "2020-03-31",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Lønnsplikt"
+    },
+    {
+      "dato": "2020-04-01",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-02",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-03",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-04",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-05",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-06",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-07",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-08",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-09",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-10",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "1000.00",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Refusjon"
+    },
+    {
+      "dato": "2020-04-11",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-12",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-13",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-14",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-15",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-16",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-17",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-18",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-19",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "-",
+      "dagtype": "Helg"
+    },
+    {
+      "dato": "2020-04-20",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-21",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-22",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-23",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    },
+    {
+      "dato": "2020-04-24",
+      "dagsats": "1000.0",
+      "permitteringsgrad": "100.0",
+      "overstiger6G": "",
+      "refusjonssbeløp": "-",
+      "lønnskompensasjonsbeløp": "1000.00",
+      "dagtype": "Lønnskompensasjon"
+    }
+  ]
+}
+}
+

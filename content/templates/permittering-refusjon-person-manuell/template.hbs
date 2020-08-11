@@ -1,0 +1,112 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{innsendtDato}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Navn:</td>
+        <td>{{navn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Fødselsnummer:</td>
+        <td>{{fnr}}</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+## Søknad om lønnskompensasjon
+<br/>
+
+### Innsendte opplysninger
+<br/>
+
+<table>
+    <tr>
+        <td>Arbeidsgiver:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td>Organisasjonsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+</table>
+<br/>
+
+#### Informasjon om permittering
+<table>
+    <tr>
+        <td>Startdato permittering (dag 1):</td>
+        <td>{{permitteringsgrunnlag.permitteringsgrunnlagPerioder.[0].fraDato}}</td>
+    </tr>
+    <tr>
+        <td>Sluttdato periode:</td>
+        <td>{{permitteringsgrunnlag.permitteringsgrunnlagPerioder.[0].tilDato}}</td>
+    </tr>
+    <tr>
+        <td>Permitteringsgrad:</td>
+        <td>{{permitteringsgrunnlag.permitteringsgrunnlagPerioder.[0].permitteringsgrad}} %</td>
+    </tr>
+</table>
+<br/>
+
+#### Informasjon om lønn
+<table>
+        <!-- {{#each inntektsgrunnlag.inntektsgrunnlagPerioder}} -->
+        <tr>
+            <td>{{this.årMåned}}:</td>
+            <td>{{this.beløp}} kr</td>
+        </tr>
+        <!-- {{/each}} -->
+    </tr>
+</table>
+<br/>
+<br/>
+
+#### Foreløpig beregning per dag
+<table border="1">
+    <tr>
+        <th>Dato</th>
+        <th>Lønn per dag</th>
+        <th>Permitteringsgrad</th>
+        <th>Avkorting 6G</th>
+        <th>Lønn før skatt</th>
+    </tr>
+        <!-- {{#each dagBeregninger}} -->
+    <tr>
+        <td>{{this.dato}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.overstiger6G}}</td>
+        <td>{{this.lønnskompensasjonsbeløp}}</td>
+    </tr>
+        <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="4">Sum</td>
+        <td><b>{{totalKompensasjon}}</b></td>
+    </tr>
+</table>
+
+
+
+#### Vedlegg
+<table>
+        <!-- {{#each vedlegg}} -->
+        <tr>
+            <td>{{this.filename}}</td>
+            <td>{{this.type}}</td>
+        </tr>
+        <!-- {{/each}} -->
+    </tr>
+</table>
+<br/>
+
+
