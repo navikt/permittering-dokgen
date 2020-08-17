@@ -18,6 +18,7 @@
   "veilederTlf": "78787877",
   "oppfolging": "Følge opp",
   "tilrettelegging": "Legget til rette",
+  "stillingstittel": "Overbrannvernsjefsingeniørbemanner",
   "stillingprosent": 70,
   "versjon": 1,
   "mentorFornavn": null,
@@ -32,7 +33,7 @@
   },
   "arbeidsgiverKontonummer": null,
   "stillingstype": null,
-  "arbeidsoppgaver": null,
+  "arbeidsoppgaver": "Rydde gangen slik at ting ikke tar fyr.",
   "lonnstilskuddProsent": null,
   "manedslonn": null,
   "feriepengesats": null,
@@ -43,13 +44,6 @@
     {
       "kategori": "Språkopplæring",
       "beskrivelse": "Lære et nytt språk"
-    }
-  ],
-  "oppgaver": [
-    {
-      "tittel": "Tolke",
-      "beskrivelse": "Tolke fra ett språk til annet",
-      "opplaering": "Se mål"
     }
   ],
   "godkjentAvDeltaker": "2020-02-03",
