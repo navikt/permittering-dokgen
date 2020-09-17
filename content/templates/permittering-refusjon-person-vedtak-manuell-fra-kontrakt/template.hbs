@@ -1,0 +1,141 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{datoSendt}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Navn:</td>
+        <td>{{navn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Fødselsnummer:</td>
+        <td>{{fnr}}</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+## Du vil få utbetalt kompensasjon for lønn under permittering
+<br/>
+
+Du har rett på <b>{{totalKompensasjon}} kr</b> i kompensasjon for lønn fra NAV.
+Du vil få utbetalt et mindre beløp enn dette, fordi vi trekker skatt av utbetalingen.
+Vi utbetaler innen 5&ndash;7 virkedager etter at du har mottatt dette brevet.
+<br/>
+Du finner detaljene om hvordan vi har beregnet beløpet lenger ned i brevet.
+<br/>
+
+#### Bakgrunnen for vedtaket
+<br/>
+De to første dagene etter at du ble permittert har arbeidsgiver ansvar for lønnen din.
+NAV skal dekke lønnen din fra og med tredje dag etter at du ble permittert og i maksimalt 18 dager unntatt lørdag og søndag.
+
+For å komme fram til beløpet du får utbetalt fra oss, har vi lagt til grunn opplysninger fra søknaden din.
+<br/>
+
+<br/>
+<p>
+Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon. <a
+        href="https://lovdata.no/dokument/SF/forskrift/2020-05-29-1102">Les mer om lønnskompensasjon i forskriften
+    her.</a>
+
+</p>
+<!-- Linjeskiftene her for å få beregning på side 2 -->
+<br />
+<br />
+
+#### Her finner du detaljene for beregningen
+
+Vi har basert vedtaket på opplysninger som vi har registrert om deg og ditt arbeidsforhold.
+<table>
+    <tr>
+        <td>Arbeidsgiver:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td>Organisasjonsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+</table>
+<br/>
+<p>
+    Startdato permittering (dag 1): {{fom}}<br/>
+    Sluttdato periode: {{tom}}
+</p>
+<p>
+    Vi har beregnet lønnskompensasjon basert på opplysningene du ga i søknaden.
+<table style="width: 60%;font-weight:bold">
+    <tr>
+        <td style="border-top: 1px solid">Oppgitt månedslønn:</td>
+        <td style="border-top: 1px solid; text-align: right;">{{numberFormat manedslonnFraKontrakt "integer"}} kr</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: 1px solid">Dette gir en gjennomsnittlig dagslønn på:</td>
+        <td style="border-bottom: 1px solid; text-align: right;">{{numberFormat dagsats "integer"}} kr</td>
+    </tr>
+</table>
+<br/>
+NAV beregner dagslønn basert på at et gjennomsnittlig arbeidsår er 260 arbeidsdager og det dermed er gjennomsnittlig 21,67 arbeidsdager i måneden
+
+Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
+</p>
+<br/>
+<br/>
+
+<table border="1">
+    <tr>
+        <th>Dato</th>
+        <th>Lønn per dag</th>
+        <th>Permitteringsgrad</th>
+        <th>Avkorting 6G</th>
+        <th>Lønn før skatt</th>
+    </tr>
+        <!-- {{#each dagBeregninger}} -->
+    <tr>
+        <td>{{this.dato}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.overstiger6G}}</td>
+        <td>{{this.lønnskompensasjonsbeløp}}</td>
+    </tr>
+        <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="4">Sum</td>
+        <td><b>{{totalKompensasjon}}</b></td>
+    </tr>
+</table>
+
+#### Du har rett til å klage
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via
+<a href="https://www.nav.no/person/kontakt-oss/nb/skriv-til-oss">www.nav.no/skrivtiloss</a>, og velge tema «Jobbsøker».
+<br/>
+#### Kontonummer
+Har du ikke registrert kontonummer hos oss, kan du gjøre det på <a href="https://www.nav.no/kontonummer">www.nav.no/kontonummer</a>.
+
+#### Har du søkt om dagpenger?
+Hvis du har søkt om dagpenger vil du få et eget vedtak om dette.
+
+#### Har du fått forskudd på dagpenger?
+Hvis du har fått forskudd på dagpenger, er ikke dette trukket av utbetalingen. <a
+        href="https://www.nav.no/no/person/innhold-til-person-forside/nyttig-a-vite/kampanje-korona/forskudd-pa-dagpenger-for-permitterte-og-arbeidsledige#chapter-8">Les
+    mer om hvordan du kan betale tilbake forskuddet på www.nav.no</a>.
+
+#### Har du spørsmål?
+Du finner mer informasjon på <a href="https://www.nav.no/lønnskompensasjon">www.nav.no/lønnskompensasjon</a>.
+
+Utbetalingen din og skattetrekket sjekker du på <a href="https://www.nav.no/utbetalinger">www.nav.no/utbetalinger</a>.
+Hvis vi ikke har registrert skattekort på deg, trekkes automatisk 50 % skatt på utbetalingen, se mer informasjon på <a href="https://www.nav.no/skatt">www.nav.no/skatt</a>.
+
+Har du andre spørsmål, se hvordan du kan kontakte oss på <a href="https://www.nav.no/kontakt">www.nav.no/kontakt</a>.
+
+Vennlig hilsen<br/>
+{{fattetAvNavn}}
+<br/><br/>
