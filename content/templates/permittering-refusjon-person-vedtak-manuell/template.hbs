@@ -76,16 +76,16 @@ Vi har basert vedtaket på opplysninger som vi har registrert om deg og ditt arb
      <!-- {{#each lonninger}} -->
         <tr>
             <td>{{this.maned}}</td>
-            <td style="text-align: right;">{{numberFormat this.inntekt "integer"}} kr</td>
+            <td style="text-align: right;">{{this.inntekt}}</td>
         </tr>
         <!-- {{/each}} -->
     <tr>
         <td style="border-top: 1px solid">Gjennomsnittlig månedslønn:</td>
-        <td style="border-top: 1px solid; text-align: right;">{{numberFormat snittlonn "integer"}} kr</td>
+        <td style="border-top: 1px solid; text-align: right;">{{snittlonn}}</td>
     </tr>
     <tr>
         <td style="border-bottom: 1px solid">Dette gir en gjennomsnittlig dagslønn på:</td>
-        <td style="border-bottom: 1px solid; text-align: right;">{{numberFormat dagsats "integer"}} kr</td>
+        <td style="border-bottom: 1px solid; text-align: right;">{{dagsats}}</td>
     </tr>
 </table>
 <br/>
