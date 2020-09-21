@@ -71,11 +71,15 @@ Arbeidsoppgaver:
 {{#if lonnstilskuddProsent}}
 ### Tilskudd
 ---
-Lønnstilskudd, prosent: {{lonnstilskuddProsent}} <br/>
-Månedslønn: {{manedslonn}} <br/>
-Feriepengesats: {{feriepengesats}} <br/>
-Arbeidsgiveravgift: {{arbeidsgiveravgift}} <br/>
 Arbeidsgivers kontonummer: {{arbeidsgiverKontonummer}}<br/>
+Månedslønn: {{manedslonn}} kr<br/><br/>
+Feriepenger: ({{feriepengesats}}%) {{feriepengerBelop}} kr<br/>
+Obligatorisk tjenestepensjon: (2%) {{otpBelop}} kr<br/>
+Arbeidsgiveravgift: ({{arbeidsgiveravgift}}%)  {{arbeidsgiveravgiftBelop}} kr<br/><br/>
+<u>Sum utgifter: {{sumLonnsutgifter}} kr</u><br/><br/>
+Fastsatt refusjon: {{lonnstilskuddProsent}}%<br/>
+<u>Sum lønnstilskudd per måned: {{sumLonnstilskudd}} kr</u><br/>
+
 {{/if}}
 
 ### Godkjenning
