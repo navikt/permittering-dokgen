@@ -11,9 +11,9 @@
   "fom": "2020-03-30",
   "tom": "2020-04-24",
   "lonninger": [
-    { "maned": "Januar 2020", "lonn": 21670 },
-    { "maned":  "Februar 2020", "lonn": 20000 },
-    { "maned":  "Mars 2020", "lonn":  23340 }
+    { "maned": "Januar 2020", "inntekt": 21670 },
+    { "maned": "Februar 2020", "inntekt": 20000 },
+    { "maned": "Mars 2020", "inntekt": 23340 }
   ],
   "snittlonn": 21670,
   "dagsats": 1000,
