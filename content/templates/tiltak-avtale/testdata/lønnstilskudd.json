@@ -40,5 +40,6 @@
   "godkjentAvDeltaker": "2020-02-11",
   "godkjentAvArbeidsgiver": "2020-02-11",
   "godkjentAvVeileder": "2020-02-11",
-  "godkjentPaVegneAv": false
+  "godkjentPaVegneAv": false,
+  "stillingstype": "Fast"
 }
