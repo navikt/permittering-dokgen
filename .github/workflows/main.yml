@@ -20,11 +20,11 @@ jobs:
      
       - name: Hent tag
         run: echo "TAG=$(git log -1 --pretty='%ad' --date=format:'%Y%m%d%H%M%S')-$(echo $GITHUB_SHA | cut -c1-7)" >> $GITHUB_ENV
-        
+
       - name: Lag image-navn
         run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
         
-      - name: Bygg, tag og push Docker image  
+      - name: Bygg, tag og push Docker image
         run: |
           docker build --tag ${IMAGE} --tag ${IMAGE_BASE}:latest .
           echo  ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} --password-stdin

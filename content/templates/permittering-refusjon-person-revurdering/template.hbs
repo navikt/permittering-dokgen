@@ -1,0 +1,108 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{datoSendt}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br/>
+<table>
+    <tr>
+        <td class="td02">Navn:</td>
+        <td>{{navn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Fødselsnummer:</td>
+        <td>{{fnr}}</td>
+    </tr>
+</table>
+
+<br/>
+<br/>
+
+## Vi har endret lønnskompensasjonen din
+<br/>
+
+Vi har gjort nye beregninger som viser at du har rett til <b>{{differanseFraForrigeVedtak}} kr</b> kroner mer i lønnskompensasjon.
+Vi har derfor endret vedtaket fra <b>{{forrigeVedtakDato}}</b>.
+Vi utbetaler innen 5–7 virkedager etter at du har mottatt dette brevet. Skatten trekkes fra før utbetalingen.
+
+Du finner detaljene om hvordan vi har beregnet beløpet lenger ned i brevet.
+
+<br/>
+
+#### Bakgrunnen for vedtaket
+
+{{endringsbeskrivelse}}
+
+Vi utbetaler ikke lønnskompensasjon for beregnet årslønn som overstiger 6 ganger folketrygdens grunnbeløp (G).
+Hvis årslønnen din overstiger 6 G, vil beløpet du får utbetalt avkortes.
+
+Vedtaket er gjort etter reglene i forskrift om lønnskompensasjon og forvaltningsloven § 33/§ 35. Les mer om lønnskompensasjon i forskriften her.
+
+
+<br/>
+
+
+#### Her finner du detaljene for beregningen
+
+NAV beregner dagslønn basert på at et gjennomsnittlig arbeidsår er 260 arbeidsdager og det dermed er gjennomsnittlig 21,67 arbeidsdager i måneden.
+
+Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
+
+<br/>
+<table border="1">
+    <tr>
+        <th>Dato</th>
+        <th>Lønn per dag</th>
+        <th>Permitterings- prosent</th>
+        <th>Refundert til arbeidsgiver</th>
+        <th>Avkorting 6G</th>
+        <th>Lønn før skatt</th>
+        <th></th>
+    </tr>
+        <!-- {{#each dagBeregninger}} -->
+    <tr>
+        <td>{{this.dato}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.refusjonssbeløp}}</td>
+        <td>{{this.overstiger6G}}</td>
+        <td>{{this.lønnskompensasjonsbeløp}}</td>
+        <td>{{this.dagtype}}</td>
+    </tr>
+        <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="5">Sum</td>
+        <td><b>{{totalKompensasjon}}</b></td>
+    </tr>
+</table>
+
+
+#### Du har rett til å klage
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via <a href="https://www.nav.no/person/kontakt-oss/nb/skriv-til-oss">www.nav.no/skrivtiloss</a>, og velge tema «Jobbsøker».
+<br/>
+#### Kontonummer
+Har du ikke registrert kontonummer hos oss, kan du gjøre det på <a href="https://www.nav.no/kontonummer">www.nav.no/kontonummer</a>.
+
+#### Har du søkt om dagpenger?
+Hvis du har søkt om dagpenger vil du få et eget vedtak om dette.
+
+#### Har du fått forskudd på dagpenger?
+Hvis du har fått forskudd på dagpenger, er ikke dette trukket av utbetalingen av lønnskompensasjon. <a href="https://www.nav.no/no/person/innhold-til-person-forside/nyttig-a-vite/kampanje-korona/tilbakebetaling-og-trekk-av-forskudd-pa-dagpenger">Les mer om hvordan du kan betale tilbake forskuddet på www.nav.no</a>.
+
+#### Har du spørsmål?
+Du finner mer informasjon på <a href="https://www.nav.no/lønnskompensasjon">www.nav.no/lønnskompensasjon</a>.
+
+Utbetalingen din og skattetrekket sjekker du på <a href="https://www.nav.no/utbetalinger">www.nav.no/utbetalinger</a>.
+Hvis vi ikke har registrert skattekort på deg, trekkes automatisk 50 % skatt på utbetalingen, se mer informasjon på <a href="https://www.nav.no/skatt">www.nav.no/skatt</a>.
+
+Har du andre spørsmål, se hvordan du kan kontakte oss på <a href="https://www.nav.no/kontakt">www.nav.no/kontakt</a>.
+
+Vennlig hilsen<br/>
+NAV
+<br/><br/>
+Dette vedtaket har blitt automatisk saksbehandlet. Vedtaksbrevet er derfor ikke underskrevet av saksbehandler.

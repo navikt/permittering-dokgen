@@ -27,8 +27,8 @@ jobs:
         
       - name: Lag image-navn
         run: echo "IMAGE=$IMAGE_BASE:$TAG" >> $GITHUB_ENV
-        
-      - name: Bygg, tag og push Docker image  
+
+      - name: Bygg, tag og push Docker image
         run: |
           docker build --tag ${IMAGE} .
           echo  ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} --password-stdin
