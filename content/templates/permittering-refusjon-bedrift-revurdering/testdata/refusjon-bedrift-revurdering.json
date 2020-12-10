@@ -1,6 +1,6 @@
 {
   "id": "01E9NTE8C4B7K96GZPMAKGP8ZT",
-  "datoMottattPdf": "2020-05-31",
+  "datoSendt": "2020-11-31",
   "bedriftNavn": "SPENNENDE ELEKTRO",
   "bedriftNr": "123456789",
   "kontaktNavn": "Gran Granli",
@@ -8,8 +8,12 @@
   "kontaktEpost": "gran@spennendeelektro.no",
   "summertTidligereRefusjonsbelop": "36000.00",
   "summertRefusjonsbelop": "40000.00",
+  "differanseFraForrigeRefusjonsbelop": "4000.00",
   "forrigeVedtakId": "ABCEDFGH",
   "endringsbeskrivelse": "Saksbehandlers endring + info om G-regulering og prosentregulering",
+  "tidspunktFraKlageSkjema": "2020-09-09",
+  "forrigeVedtakDato": "2020-07-09",
+  "fattetAvNavn": "Navn Navnesen",
 
   "arbeidsforhold": [
     {
@@ -19,7 +23,7 @@
       "permitteringsprosent": "100.0",
       "periode": "2020-04-01 - 2020-04-10",
       "refusjonsbeløp": "8000.00",
-      "overstiger6G": "",
+      "overstiger6G": "ja",
       "endringsbeskrivelse": "Endret dato"
     },
     {
