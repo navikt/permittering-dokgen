@@ -12,7 +12,7 @@
   "tom": "2020-04-24",
   "fattetAv": "S12345",
   "fattetAvNavn": "Navn Navnesen",
-  "endringsbeskrivelse": "<endringsbeskrivelse>",
+  "endringsbeskrivelse": "<b>&lt;endringsbeskrivelse&gt;</b>",
   "lonninger": [
     { "maned": "Januar 2020", "inntekt": 21670 },
     { "maned":  "Februar 2020", "inntekt": 20000 },
