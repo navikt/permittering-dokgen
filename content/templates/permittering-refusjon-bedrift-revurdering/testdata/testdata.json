@@ -9,11 +9,10 @@
   "summertRefusjonsbelop": "40000.00",
   "differanseFraForrigeBeløp": "4000.00",
   "forrigeVedtakId": "ABCEDFGH",
-  "endringsbeskrivelse": "Saksbehandlers endring + info om G-regulering og prosentregulering",
+  "endringsbeskrivelse": "&lt;endringsbeskrivelse&gt;",
   "tidspunktFraKlageSkjema": "2020-09-09",
   "forrigeVedtakDato": "2020-07-09",
-  "fattetAvNavn": "Navn Navnesen",
-
+  "fattetAvNavn": "FFFF Navnesen",
   "arbeidsforhold": [
     {
       "fnr": "10987654321",
