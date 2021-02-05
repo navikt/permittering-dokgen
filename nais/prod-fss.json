@@ -1,3 +1,4 @@
 {
-    "ingress": "https://tag-dokgen.nais.adeo.no"
+    "ingress": "https://tag-dokgen.nais.adeo.no",
+    "namespace": "default"
 }

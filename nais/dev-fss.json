@@ -1,3 +1,4 @@
 {
-    "ingress": "https://tag-dokgen.nais.preprod.local"
+    "ingress": "https://tag-dokgen.nais.preprod.local",
+    "namespace": "default"
 }
