@@ -1,4 +1,4 @@
 {
-    "ingress": "https://tag-dokgen.dev.intern.nav.no",
+    "ingress": "https://arbeidsgiver.dev.intern.nav.no/tag-dokgen",
     "namespace": "arbeidsgiver"
 }
