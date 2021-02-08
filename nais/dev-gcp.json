@@ -1,4 +1,5 @@
 {
-    "ingress": "https://arbeidsgiver.dev.intern.nav.no/tag-dokgen",
-    "namespace": "arbeidsgiver"
+    "ingress": "https://tag-dokgen.dev.intern.nav.no",
+    "namespace": "arbeidsgiver",
+    "app-accesspolicy": "altinn-meldinger-api"
 }
