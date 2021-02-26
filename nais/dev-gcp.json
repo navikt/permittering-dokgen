@@ -1,5 +1,0 @@
-{
-    "ingress": "https://tag-dokgen.dev.intern.nav.no",
-    "namespace": "arbeidsgiver",
-    "app-accesspolicy": "altinn-meldinger-api"
-}

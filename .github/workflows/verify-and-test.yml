@@ -41,4 +41,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: Bygg av ${{ env.TAG }}
-          body: Kommenter med <b>/deploy ${{ env.TAG }}</b> for å deploye til dev-fss og dev-gcp.
+          body: Kommenter med <b>/deploy ${{ env.TAG }}</b> for å deploye til dev-fss.

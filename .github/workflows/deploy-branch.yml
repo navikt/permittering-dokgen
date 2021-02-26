@@ -33,18 +33,6 @@ jobs:
           VARS: nais/dev-fss.json
           REF: ${{ env.TAG }}
           VERSION: ${IMAGE}
-
-      - name: Deploy til dev-gcp
-        uses: nais/deploy/actions/deploy@v1
-        env:
-          TEAM: arbeidsgiver
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-gcp
-          RESOURCE: naiserator.yaml
-          PRINT_PAYLOAD: true
-          VARS: nais/dev-gcp.json
-          REF: ${{ env.TAG }}
-          VERSION: ${IMAGE}
           
       - name: Oppdater kommentar med deployment status ved feil
         if: failure()
