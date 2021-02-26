@@ -28,18 +28,7 @@ jobs:
           echo  ${GITHUB_TOKEN} | docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} --password-stdin
           docker push ${IMAGE_BASE}   
     
-      - name: Deploy to dev-gcp
-        uses: nais/deploy/actions/deploy@v1
-        env:
-          TEAM: arbeidsgiver
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-gcp
-          RESOURCE: naiserator.yaml
-          PRINT_PAYLOAD: true
-          VARS: nais/dev-gcp.json
-          VERSION: ${IMAGE}
-
-      - name: Deploy to dev-fss
+      - name: Deploy to Preprod
         uses: nais/deploy/actions/deploy@v1
         env:
           TEAM: arbeidsgiver
