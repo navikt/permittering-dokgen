@@ -1,4 +1,4 @@
 {
-    "ingress": "https://tagdokgen.labs.nais.io",
+    "ingress": "https://tag-dokgen.labs.nais.io",
     "namespace": "arbeidsgiver"
 }
