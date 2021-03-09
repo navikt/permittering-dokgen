@@ -37,13 +37,13 @@ jobs:
           VARS: nais/dev-fss.json
           VERSION: $IMAGE
 
-#      - name: Deploy til prod-fss
-#        uses: nais/deploy/actions/deploy@v1
-#        env:
-#          TEAM: arbeidsgiver
-#          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-#          CLUSTER: prod-fss
-#          RESOURCE: naiserator.yaml
-#          PRINT_PAYLOAD: true
-#          VARS: nais/prod-fss.json
-#          VERSION: $IMAGE
+      - name: Deploy til prod-fss
+        uses: nais/deploy/actions/deploy@v1
+        env:
+          TEAM: arbeidsgiver
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: prod-fss
+          RESOURCE: naiserator.yaml
+          PRINT_PAYLOAD: true
+          VARS: nais/prod-fss.json
+          VERSION: $IMAGE
