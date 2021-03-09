@@ -26,6 +26,17 @@ jobs:
           echo ${{ secrets.GHCR_PUSH_TOKEN }} | docker login ghcr.io -u ${{ secrets.GHCR_PUSH_USERNAME }} --password-stdin
           docker push $IMAGE
 
+      - name: Deploy til labs-gcp
+        uses: nais/deploy/actions/deploy@v1
+        env:
+          TEAM: arbeidsgiver
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: labs-gcp
+          RESOURCE: naiserator.yaml
+          PRINT_PAYLOAD: true
+          VARS: nais/labs-gcp.json
+          VERSION: $IMAGE
+
       - name: Deploy til dev-fss
         uses: nais/deploy/actions/deploy@v1
         env:
