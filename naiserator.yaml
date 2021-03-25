@@ -26,7 +26,3 @@ spec:
       value: {{ image }}
     - name: APP_TEAM
       value: arbeidsgiver
-  accessPolicy:
-    inbound:
-      rules:
-        - application: tiltaksgjennomforing-api
