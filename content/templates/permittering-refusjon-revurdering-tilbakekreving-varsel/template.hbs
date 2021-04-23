@@ -1,0 +1,145 @@
+<table>
+    <tr>
+        <td></td>
+        <td class="td350">{{datoSendt}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="td350">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+<br />
+<table>
+    <tr>
+        <td class="td02">Navn:</td>
+        <td>{{navn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Fødselsnummer:</td>
+        <td>{{fnr}}</td>
+    </tr>
+</table>
+<br />
+<br />
+
+## Vi vurderer om du må betale tilbake lønnskompensasjon
+<br />
+
+Du fikk vedtak om lønnskompensasjon <b>{{lønnsskompensasjonDato}}</b>. Vi har fått nye opplysninger og har beregnet lønnskompensasjonen på nytt.
+Den nye beregningen viser at du har fått utbetalt <b>{{tilbakekrevingsBeløp}}</b> kroner for mye i lønnskompensasjon.
+<br />
+
+Før vi avgjør om du skal betale tilbake, har du rett til å uttale deg. Dette må du gjøre innen <b>{{dato3UkerFremITid}}</b>.
+<br />
+
+Dette er kun et varsel om at vi vurderer å kreve tilbake det feilutbetalte beløpet. Det er ikke et vedtak om tilbakekreving.
+<br />
+
+### Dette har skjedd i saken din
+{{{fritekstfelt}}}
+<br />
+
+Du finner flere detaljer om den nye beregningen vedlagt lenger ned i brevet.
+<br />
+
+### Dette legger vi vekt på i vurderingen vår
+
+Når vi avgjør om du skal betale tilbake vurderer vi:
+
+<ul class="font-size-13">
+    <li>om du forstod eller burde forstått at beløpet du fikk utbetalt var feil</li>
+    <li>om du har gitt riktig informasjon til NAV</li>
+    <li>om du har gitt all informasjon til NAV i rett tid</li>
+</ul>
+
+Hvis vi skal kreve tilbake, vurderer vi om du skal betale tilbake hele eller deler av beløpet. Da vurderer vi
+
+<ul class="font-size-13">
+    <li>hvor stort det feilutbetalte beløpet er </li>
+    <li>om feilen kan skyldes NAV</li>
+</ul>
+
+Selv om det er NAV som er skyld i feilutbetalingen, kan vi kreve at du betaler tilbake pengene.
+<br />
+
+Dersom vi vedtar at du må betale tilbake hele eller deler av det feilutbetalte beløpet, trekker vi fra skatten på beløpet vi krever tilbake.
+<br />
+
+Hvis du bevisst har gitt oss feil eller mangelfull informasjon eller opptrådt grovt uaktsomt, kan vi kreve at du betaler et rentetillegg på ti prosent av beløpet.
+<br />
+
+Dette går frem av folketrygdloven §§ 22-15
+<br />
+
+### Slik uttaler du deg
+Du kan sende uttalelsen din ved å logge deg inn på nav.no/skrivtiloss og velg “Jobbsøker”.
+Skal du sende vedlegg må du gå til nav.no/ettersendelse. Her finner du informasjon om hvordan du ettersender på papir.
+<br />
+
+### Hva skjer videre i saken din?
+Etter fristen for din uttalelse vil vi vurdere saken og sende deg et vedtak. Dersom du må betale hele eller deler av beløpet,
+vil du få beskjed om hvordan du betaler tilbake i vedtaket.
+<br />
+
+### Har du spørsmål?
+Du finner mer informasjon på www.nav.no/lønnskompensasjon.
+Utbetalingen din og skattetrekket sjekker du på www.nav.no/utbetalinger.
+Har du andre spørsmål, se hvordan du kan kontakte oss på www.nav.no/kontakt
+<br /><br />
+
+Vennlig hilsen
+<br />
+NAV
+<br />
+{{fattetAvNavn}}
+<br /><br />
+
+<div class="new_page" />
+
+### Detaljer for den nye beregningen:
+<table>
+    <tr>
+        <td>Arbeidsgiver:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td>Organisasjonsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+    <tr>
+        <td>Startdato permittering (dag 1):</td>
+        <td>{{permitteringStart}}</td>
+    </tr>
+    <tr>
+        <td>Sluttdato periode:</td>
+        <td>{{permitteringSlutt}}</td>
+    </tr>
+</table>
+
+Hvis du har spørsmål om opplysningene vi oppgir, og det er arbeidsgiveren din som har meldt inn disse, må du ta kontakt med arbeidsgiveren.
+
+Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag
+<br /><br />
+
+<table border="1" style="page-break-inside: avoid;">
+    <tr>
+        <th>Dato</th>
+        <th>Lønn per dag</th>
+        <th>Permitteringsgrad</th>
+        <th>Avkorting 6G</th>
+        <th>Lønn før skatt</th>
+    </tr>
+    <!-- {{#each dagBeregninger}} -->
+    <tr>
+        <td>{{this.dato}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.overstiger6G}}</td>
+        <td>{{this.lønnskompensasjonsbeløp}}</td>
+    </tr>
+    <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="4">Sum</td>
+        <td><b>{{totalKompensasjon}}</b></td>
+    </tr>
+</table>
