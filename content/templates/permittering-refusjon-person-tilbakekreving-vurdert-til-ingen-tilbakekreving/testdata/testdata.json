@@ -13,6 +13,7 @@
   "forrigeVedtakDato": "2020-11-10",
   "endringsbeskrivelse": "(Her kommer saksbehandlers begrunnelse)",
   "fattetAvNavn": "Navn Navnesen",
+  "vilkarIkkeOppfylt": false,
   "dagBeregninger": [
     {
       "dato": "2020-03-30",

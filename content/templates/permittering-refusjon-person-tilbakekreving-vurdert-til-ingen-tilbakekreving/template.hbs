@@ -47,6 +47,8 @@ Vi har basert vedtaket på opplysninger om følgende arbeidsforhold.
         <td>Organisasjonsnummer:</td>
         <td>{{bedriftNr}}</td>
     </tr>
+    <!--{{#if vilkarIkkeOppfylt}}-->
+    <!--{{else}}-->
     <tr>
         <td>Startdato permittering (dag 1):</td>
         <td>{{fom}}</td>
@@ -55,12 +57,15 @@ Vi har basert vedtaket på opplysninger om følgende arbeidsforhold.
         <td>Sluttdato periode:</td>
         <td>{{tom}}</td>
     </tr>
+    <!--{{/if}}-->
 </table>
 <br />
 
 Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
-
 <br />
+
+{{#if vilkarIkkeOppfylt}}
+{{else}}
 <table border="1">
     <tr>
         <th>Dato</th>
@@ -87,7 +92,7 @@ Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobbe
         <td><b>{{totalKompensasjon}}</b></td>
     </tr>
 </table>
-
+{{/if}}
 
 #### Du har rett til å klage
 Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan

@@ -90,7 +90,8 @@ NAV
 <br />
 {{fattetAvNavn}}
 <br /><br />
-
+{{#if vilkarIkkeOppfylt}}
+{{else}}
 <div class="new_page" />
 
 ### Detaljer for den nye beregningen:
@@ -111,12 +112,14 @@ NAV
         <td>Sluttdato periode:</td>
         <td>{{tom}}</td>
     </tr>
+
 </table>
 
 Hvis du har spørsmål om opplysningene vi oppgir, og det er arbeidsgiveren din som har meldt inn disse, må du ta kontakt med arbeidsgiveren.
 
 Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag
 <br /><br />
+
 
 <table border="1" style="page-break-inside: avoid;">
     <tr>
@@ -140,3 +143,4 @@ Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobbe
         <td><b>{{totalKompensasjon}}</b></td>
     </tr>
 </table>
+{{/if}}
