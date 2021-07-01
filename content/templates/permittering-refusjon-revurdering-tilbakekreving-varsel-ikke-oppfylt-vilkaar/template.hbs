@@ -22,23 +22,21 @@
 ## Vi vurderer om du må betale tilbake lønnskompensasjon
 <br />
 
-Du fikk vedtak om lønnskompensasjon <b>{{forrigeVedtakDato}}</b>. Vi har fått nye opplysninger og har beregnet lønnskompensasjonen på nytt.
-Den nye beregningen viser at du har fått utbetalt <b>{{ cut (cut differanseFraForrigeBeløp "-") "−"}}</b> kroner for mye i lønnskompensasjon.
+Du fikk vedtak om lønnskompensasjon <b>{{forrigeVedtakDato}}</b>. Vi har fått nye opplysninger og har kommet fram til at du ikke har rett til lønnskompensasjon. Du har derfor fått utbetalt <b>{{ cut (cut differanseFraForrigeBeløp "-") "−"}}</b> kroner for mye.
 <br />
 
 Før vi avgjør om du skal betale tilbake, har du rett til å uttale deg. Dette må du gjøre innen <b>{{dato3UkerFremITid}}</b>.
 <br />
 
-Dette er kun et varsel om at vi vurderer å kreve tilbake det feilutbetalte beløpet. Det er ikke et vedtak om tilbakekreving.
+Dette er kun et varsel om at vi vurderer å kreve tilbake det feilutbetalte beløpet.
+<br/>
+
+Det er ikke et vedtak om tilbakekreving. Dersom vi vedtar at du må betale tilbake hele eller deler av det feilutbetalte beløpet, trekker vi fra skatten på beløpet vi krever tilbake.
 <br />
-Dersom vi vedtar at du må betale tilbake hele eller deler av det feilutbetalte beløpet, trekker vi fra skatten på beløpet vi krever tilbake.
-</br>
 
 ### Dette har skjedd i saken din
 {{{endringsbeskrivelse}}}
-<br />
 
-Du finner flere detaljer om den nye beregningen vedlagt lenger ned i brevet.
 <br />
 
 ### Dette legger vi vekt på i vurderingen vår
@@ -90,7 +88,7 @@ NAV
 
 <div class="new_page" />
 
-### Detaljer for den nye beregningen:
+### Du fikk utbetalt lønnskompensasjon for følgende arbeidsforhold:
 <table>
     <tr>
         <td>Arbeidsgiver:</td>
@@ -99,43 +97,5 @@ NAV
     <tr>
         <td>Organisasjonsnummer:</td>
         <td>{{bedriftNr}}</td>
-    </tr>
-    <tr>
-        <td>Startdato permittering (dag 1):</td>
-        <td>{{fom}}</td>
-    </tr>
-    <tr>
-        <td>Sluttdato periode:</td>
-        <td>{{tom}}</td>
-    </tr>
-
-</table>
-
-Hvis du har spørsmål om opplysningene vi oppgir, og det er arbeidsgiveren din som har meldt inn disse, må du ta kontakt med arbeidsgiveren.
-
-Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag
-<br /><br />
-
-
-<table border="1" style="page-break-inside: avoid;">
-    <tr>
-        <th>Dato</th>
-        <th>Lønn per dag</th>
-        <th>Permitteringsgrad</th>
-        <th>Avkorting 6G</th>
-        <th>Lønn før skatt</th>
-    </tr>
-    <!-- {{#each dagBeregninger}} -->
-    <tr>
-        <td>{{this.dato}}</td>
-        <td>{{this.dagsats}}</td>
-        <td>{{this.permitteringsgrad}}</td>
-        <td>{{this.overstiger6G}}</td>
-        <td>{{this.lønnskompensasjonsbeløp}}</td>
-    </tr>
-    <!-- {{/each}} -->
-    <tr>
-        <td border="0" colspan="4">Sum</td>
-        <td><b>{{totalKompensasjon}}</b></td>
     </tr>
 </table>
