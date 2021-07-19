@@ -26,17 +26,13 @@
 ## Vi har endret lønnskompensasjonen din
 <br />
 
-Vi har mottatt nye opplysninger som viser at du fikk utbetalt <b>{{ cut (cut differanseFraForrigeBeløp "-") "−"}}</b> kroner for mye i
-lønnskompensasjon. Vi har derfor endret vedtaket fra <b>{{forrigeVedtakDato}}</b>.
-Du trenger ikke å betale tilbake det feilutbetalte beløpet.
+Vi har mottatt nye opplysninger som viser at du fikk utbetalt <b>{{ cut (cut differanseFraForrigeBeløp "-") "−"}}</b> kroner for mye i lønnskompensasjon. Du hadde ikke rett til lønnskompensasjon og vi har derfor endret vedtaket fra <b>{{forrigeVedtakDato}}</b>. Du trenger ikke å betale tilbake det feilutbetalte beløpet.
 
 <p>
 {{{endringsbeskrivelse}}}
 </p>
 
-#### Her finner du detaljene for beregningen
-
-Vi har basert vedtaket på opplysninger om følgende arbeidsforhold.
+#### Du fikk utbetalt lønnskompensasjon for følgende arbeidsforhold
 
 <table>
     <tr>
@@ -47,46 +43,8 @@ Vi har basert vedtaket på opplysninger om følgende arbeidsforhold.
         <td>Organisasjonsnummer:</td>
         <td>{{bedriftNr}}</td>
     </tr>
-    <tr>
-        <td>Startdato permittering (dag 1):</td>
-        <td>{{fom}}</td>
-    </tr>
-    <tr>
-        <td>Sluttdato periode:</td>
-        <td>{{tom}}</td>
-    </tr>
 </table>
 <br />
-
-Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
-<br />
-
-<table border="1">
-    <tr>
-        <th>Dato</th>
-        <th>Lønn per dag</th>
-        <th>Permitterings- prosent</th>
-        <th>Refundert til arbeidsgiver</th>
-        <th>Avkorting 6G</th>
-        <th>Lønn før skatt</th>
-        <th></th>
-    </tr>
-    <!-- {{#each dagBeregninger}} -->
-    <tr>
-        <td>{{this.dato}}</td>
-        <td>{{this.dagsats}}</td>
-        <td>{{this.permitteringsgrad}}</td>
-        <td>{{this.refusjonssbeløp}}</td>
-        <td>{{this.overstiger6G}}</td>
-        <td>{{this.lønnskompensasjonsbeløp}}</td>
-        <td>{{this.dagtype}}</td>
-    </tr>
-    <!-- {{/each}} -->
-    <tr>
-        <td border="0" colspan="5">Sum</td>
-        <td><b>{{totalKompensasjon}}</b></td>
-    </tr>
-</table>
 
 #### Du har rett til å klage
 Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan
