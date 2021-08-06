@@ -62,7 +62,7 @@ Hvis vi skal kreve tilbake, vurderer vi om du skal betale tilbake hele eller del
 Selv om det er NAV som er skyld i feilutbetalingen, kan vi kreve at du betaler tilbake pengene.
 <br />
 
-Hvis du har gitt oss feil eller mangelfull informasjon, kan vi kreve at du betaler et rentetillegg på ti prosent av beløpet. Dette går frem av folketrygdloven §§ 22-15 og 22-17 a
+Hvis du har gitt oss feil eller mangelfull informasjon, kan vi kreve at du betaler et rentetillegg på ti prosent av beløpet. Dette går frem av folketrygdloven §§ 22-15 og 22-17 a.
 <br />
 
 ### Slik uttaler du deg
@@ -117,25 +117,29 @@ Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobbe
 <br /><br />
 
 
-<table border="1" style="page-break-inside: avoid;">
+<table border="1">
     <tr>
         <th>Dato</th>
         <th>Lønn per dag</th>
-        <th>Permitteringsgrad</th>
+        <th>Permitterings- prosent</th>
+        <th>Refundert til arbeidsgiver</th>
         <th>Avkorting 6G</th>
         <th>Lønn før skatt</th>
+        <th></th>
     </tr>
     <!-- {{#each dagBeregninger}} -->
     <tr>
         <td>{{this.dato}}</td>
         <td>{{this.dagsats}}</td>
         <td>{{this.permitteringsgrad}}</td>
+        <td>{{this.refusjonssbeløp}}</td>
         <td>{{this.overstiger6G}}</td>
         <td>{{this.lønnskompensasjonsbeløp}}</td>
+        <td>{{this.dagtype}}</td>
     </tr>
     <!-- {{/each}} -->
     <tr>
-        <td border="0" colspan="4">Sum</td>
+        <td border="0" colspan="5">Sum</td>
         <td><b>{{totalKompensasjon}}</b></td>
     </tr>
 </table>
