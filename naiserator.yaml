@@ -4,7 +4,7 @@ metadata:
   labels:
     team: arbeidsgiver
   name: tag-dokgen
-  namespace: {{{namespace}}}
+  namespace: arbeidsgiver
 spec:
   image: {{ image }}
   port: 8080
