@@ -131,3 +131,16 @@ td {
   .font-size-13{
       font-size: 13px;
   }
+
+  .strafferunde-table-header {
+      height: 60px;
+      background-color: rgb(200, 217, 240);
+      font-weight: bold;
+      vertical-align: top;
+  }
+  .strafferunde-row > td {
+      padding: 5px;
+  }
+  .strafferunde-table-header > td {
+      padding: 5px;
+  }

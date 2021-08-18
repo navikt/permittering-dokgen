@@ -23,90 +23,62 @@
 <br />
 <br />
 
-## STRAFFERUNDE
+## Du må betale tilbake lønnskompensasjon
 <br />
 
-Vi har mottatt nye opplysninger som viser at du fikk utbetalt <b>{{ cut (cut differanseFraForrigeBeløp "-") "−"}}</b> kroner for mye i
-lønnskompensasjon. Vi har derfor endret vedtaket fra <b>{{forrigeVedtakDato}}</b>.
-Du trenger ikke å betale tilbake det feilutbetalte beløpet.
+Vi viser til brev <dato varsel> om feilutbetalt lønnskompensasjon.
+Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
+Dette er <feilutbetalingbeløpTotalBrutto> kroner inkludert skatt.
 
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
+Vi har kommet fram til at du skal betale tilbake deler av beløpet.
+Det vil si {{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner etter at skatten er trukket fra.
+{{/eq}}
+
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_UTEN_RENTER"}}
+Vi har kommet fram til at du skal betale tilbake hele beløpet.
+Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er trukket fra.
+{{/eq}}
+
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
+Vi har kommet fram til at du skal betale tilbake hele beløpet inkludert et rentetillegg på 10 %.
+Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er trukket fra.
+{{/eq}}
+
+#### Hvordan har vi kommet fram til dette?
 <p>
 {{{endringsbeskrivelse}}}
 </p>
 
-#### Her finner du detaljene for beregningen
+#### Er det særlige grunner til å redusere beløpet?
+<p>
+{{{tilbakekrevingAttributter.saerligeGrunnerReduksjonBeskrivelse}}}
+</p>
 
-Vi har basert vedtaket på opplysninger om følgende arbeidsforhold.
+Vedtaket er gjort etter reglene i lønnskompensasjonsforskriften og folketrygdloven § 22-15 og forvaltningsloven § 35.
 
-<table>
-    <tr>
-        <td>Arbeidsgiver:</td>
-        <td>{{bedriftNavn}}</td>
-    </tr>
-    <tr>
-        <td>Organisasjonsnummer:</td>
-        <td>{{bedriftNr}}</td>
-    </tr>
-    <!--{{#if vilkarIkkeOppfylt}}-->
-    <!--{{else}}-->
-    <tr>
-        <td>Startdato permittering (dag 1):</td>
-        <td>{{fom}}</td>
-    </tr>
-    <tr>
-        <td>Sluttdato periode:</td>
-        <td>{{tom}}</td>
-    </tr>
-    <!--{{/if}}-->
-</table>
-<br />
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
+#### Renter
+Etter vår vurdering må du ha forstått at du ikke har gitt NAV alle nødvendige opplysninger. Derfor må du betale et rentetillegg på 10 %. Det vil si <10%avBruttoFeilutbetalingsbeløp?> kroner i tillegg til det feilutbetalte beløpet. Dette går fram av folketrygdloven § 22-17 a.
+{{/eq}}
 
-Lønnen du har rett på er fordelt ut på hverdager, også hvis du normalt jobber lørdag og søndag.
-<br />
+#### Skatt
+Beløpet du skal betale tilbake etter at skatt er trukket fra, er beregnet etter ditt gjennomsnittlige skattetrekk hver måned. Det gjør at beløpet du skal betale tilbake etter skatt, ikke alltid er likt med beløpet du mottok på din konto.
+Når NAV mottar tilbakebetaling fra deg gir vi opplysninger til Skatteetaten som vil vurdere om det er grunnlag for å endre ditt skatteoppgjør.
 
-{{#if vilkarIkkeOppfylt}}
-{{else}}
-<table border="1">
-    <tr>
-        <th>Dato</th>
-        <th>Lønn per dag</th>
-        <th>Permitterings- prosent</th>
-        <th>Refundert til arbeidsgiver</th>
-        <th>Avkorting 6G</th>
-        <th>Lønn før skatt</th>
-        <th></th>
-    </tr>
-    <!-- {{#each dagBeregninger}} -->
-    <tr>
-        <td>{{this.dato}}</td>
-        <td>{{this.dagsats}}</td>
-        <td>{{this.permitteringsgrad}}</td>
-        <td>{{this.refusjonssbeløp}}</td>
-        <td>{{this.overstiger6G}}</td>
-        <td>{{this.lønnskompensasjonsbeløp}}</td>
-        <td>{{this.dagtype}}</td>
-    </tr>
-    <!-- {{/each}} -->
-    <tr>
-        <td border="0" colspan="5">Sum</td>
-        <td><b>{{totalKompensasjon}}</b></td>
-    </tr>
-</table>
-{{/if}}
+#### Hvordan betale tilbake pengene du skylder
+Du vil få krav fra NAV Innkreving på det beløpet du skal betale tilbake.
+Du finner mer informasjon på www.nav.no/innkreving.
 
-#### Du har rett til å klage
-Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan
-sende klagen til oss via <a href="https://klage-dittnav.nav.no/korona/lonnskompensasjon">klage.nav.no/korona/lonnskompensasjon</a>.
-<br />
+#### Du har rett til å klage 
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via www.klage.nav.no/korona/lonnskompensasjon . 
+Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket.  Dette går fram av forvaltningsloven § 42. Hvis du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte, betaler vi pengene tilbake til deg.
 
-#### Har du spørsmål?
-Du finner mer informasjon på <a href="https://www.nav.no/lønnskompensasjon">www.nav.no/lønnskompensasjon</a>
+#### Du har rett til innsyn
+På www.nav.no/dittnav kan du se dokumentene i saken din.
 
-Utbetalingen din og skattetrekket sjekker du på <a href="https://www.nav.no/utbetalinger">www.nav.no/utbetalinger</a>.
-
-Har du andre spørsmål, se hvordan du kan kontakte oss på <a href="https://www.nav.no/kontakt">www.nav.no/kontakt</a>
-<br />
-<br />
+#### Har du spørsmål? 
+Du finner mer informasjon på www.nav.no/lønnskompensasjon.  Utbetalingen din og skattetrekket sjekker du på www.nav.no/utbetalinger.  Har du andre spørsmål, se hvordan du kan kontakte oss på www.nav.no/kontakt. 
 
 Vennlig hilsen
 <br />
@@ -114,3 +86,38 @@ Vennlig hilsen
 <br />
 NAV Arbeid og ytelser lønnskompensasjon
 <br /><br />
+
+<div class="newpage"/>
+
+
+<table border="1" class="strafferunde-table" >
+<tr class="strafferunde-table-header">
+<td>Periode</td>
+<td>Feilutbetalt beløp</td>
+<td>Tilbakebetaling</td>
+<td>Beløp før skatt</td>
+<td>Beløp du skal betale tilbake etter skatt er trukket fra</td>
+</tr>
+<tr class="strafferunde-row">
+<td>{{fom}} - {{tom}}</td>
+<td>{{tilbakekrevingAttributter.nettoBelop}}</td>
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
+<td>Deler av beløpet</td>
+{{/eq}}
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_UTEN_RENTER"}}
+<td>Hele beløpet</td>
+{{/eq}}
+{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
+<td>Hele beløpet</td>
+{{/eq}}
+<td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner</td>
+<td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner</td>
+</tr>
+<tr class="strafferunde-row">
+<td>sum</td>
+<td></td>
+<td></td>
+<td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner</td>
+<td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner</td>
+</tr>
+</table>
