@@ -26,9 +26,9 @@
 ## Du må betale tilbake lønnskompensasjon
 <br />
 
-Vi viser til brev <dato varsel> om feilutbetalt lønnskompensasjon.
+Vi viser til brev {{varselSendtTidspunkt}} om feilutbetalt lønnskompensasjon.
 Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
-Dette er <feilutbetalingbeløpTotalBrutto> kroner inkludert skatt.
+Dette er {{tilbakekrevingAttributter.brutto}} kroner inkludert skatt.
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 Vi har kommet fram til at du skal betale tilbake deler av beløpet.
@@ -42,15 +42,15 @@ Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er t
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 Vi har kommet fram til at du skal betale tilbake hele beløpet inkludert et rentetillegg på 10 %.
-Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er trukket fra.
+Det vil si <{{tilbakekrevingAttributter.nettoBelop + renter}}> kroner etter at skatten er trukket fra.
 {{/eq}}
 
-#### Hvordan har vi kommet fram til dette?
+#### Hvordan har vi kommet fram til dette?
 <p>
 {{{endringsbeskrivelse}}}
 </p>
 
-#### Er det særlige grunner til å redusere beløpet?
+#### Er det særlige grunner til å redusere beløpet?
 <p>
 {{{tilbakekrevingAttributter.saerligeGrunnerReduksjonBeskrivelse}}}
 </p>
@@ -59,26 +59,26 @@ Vedtaket er gjort etter reglene i lønnskompensasjonsforskriften og folketrygdlo
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 #### Renter
-Etter vår vurdering må du ha forstått at du ikke har gitt NAV alle nødvendige opplysninger. Derfor må du betale et rentetillegg på 10 %. Det vil si <10%avBruttoFeilutbetalingsbeløp?> kroner i tillegg til det feilutbetalte beløpet. Dette går fram av folketrygdloven § 22-17 a.
+Etter vår vurdering må du ha forstått at du ikke har gitt NAV alle nødvendige opplysninger. Derfor må du betale et rentetillegg på 10 %. Det vil si <renter (skal beregnes av netto eller brutto?)> kroner i tillegg til det feilutbetalte beløpet. Dette går fram av folketrygdloven § 22-17 a.
 {{/eq}}
 
 #### Skatt
 Beløpet du skal betale tilbake etter at skatt er trukket fra, er beregnet etter ditt gjennomsnittlige skattetrekk hver måned. Det gjør at beløpet du skal betale tilbake etter skatt, ikke alltid er likt med beløpet du mottok på din konto.
 Når NAV mottar tilbakebetaling fra deg gir vi opplysninger til Skatteetaten som vil vurdere om det er grunnlag for å endre ditt skatteoppgjør.
 
-#### Hvordan betale tilbake pengene du skylder
-Du vil få krav fra NAV Innkreving på det beløpet du skal betale tilbake.
-Du finner mer informasjon på www.nav.no/innkreving.
+#### Hvordan betale tilbake pengene du skylder
+Du vil få krav fra NAV Innkreving på det beløpet du skal betale tilbake.
+Du finner mer informasjon på www.nav.no/innkreving.
 
-#### Du har rett til å klage 
-Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via www.klage.nav.no/korona/lonnskompensasjon . 
-Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket.  Dette går fram av forvaltningsloven § 42. Hvis du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte, betaler vi pengene tilbake til deg.
+#### Du har rett til å klage 
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via www.klage.nav.no/korona/lonnskompensasjon . 
+Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket.  Dette går fram av forvaltningsloven § 42. Hvis du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte, betaler vi pengene tilbake til deg.
 
 #### Du har rett til innsyn
 På www.nav.no/dittnav kan du se dokumentene i saken din.
 
-#### Har du spørsmål? 
-Du finner mer informasjon på www.nav.no/lønnskompensasjon.  Utbetalingen din og skattetrekket sjekker du på www.nav.no/utbetalinger.  Har du andre spørsmål, se hvordan du kan kontakte oss på www.nav.no/kontakt. 
+#### Har du spørsmål? 
+Du finner mer informasjon på www.nav.no/lønnskompensasjon.  Utbetalingen din og skattetrekket sjekker du på www.nav.no/utbetalinger.  Har du andre spørsmål, se hvordan du kan kontakte oss på www.nav.no/kontakt. 
 
 Vennlig hilsen
 <br />
@@ -100,7 +100,7 @@ NAV Arbeid og ytelser lønnskompensasjon
 </tr>
 <tr class="strafferunde-row">
 <td>{{fom}} - {{tom}}</td>
-<td>{{tilbakekrevingAttributter.nettoBelop}}</td>
+<td>{{tilbakekrevingAttributter.bruttoBelop}}</td>
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 <td>Deler av beløpet</td>
 {{/eq}}
@@ -110,13 +110,6 @@ NAV Arbeid og ytelser lønnskompensasjon
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 <td>Hele beløpet</td>
 {{/eq}}
-<td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner</td>
-<td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner</td>
-</tr>
-<tr class="strafferunde-row">
-<td>sum</td>
-<td></td>
-<td></td>
 <td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner</td>
 <td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner</td>
 </tr>

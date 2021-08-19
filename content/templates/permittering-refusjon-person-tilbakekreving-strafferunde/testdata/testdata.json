@@ -258,6 +258,7 @@
   "tilbakekrevingAttributter": {
     "arbeidsforholdId": "01FDA2E1PS7B5XCXZM9XCT7KKQ",
     "nettoBelop": "111.11",
+    "bruttoBelop": "222.22",
     "saerligeGrunnerReduksjonBeskrivelse": "Særlige grunner redusjon beskrivelse",
     "reduksjonProsent": "50%",
     "bruttoRedusertInnkrevingBelop": "2200",
@@ -265,5 +266,6 @@
     "tilbakekrevingKategori": "DELVIS_TILBAKEKREVING"
   },
   "forrigeVedtakDato": "2020-08-31",
+  "varselSendtTidspunkt": "2020-09-10",
   "differanseFraForrigeBeløp": "-1500.11"
 }
