@@ -28,7 +28,7 @@
 
 Vi viser til brev {{varselSendtTidspunkt}} om feilutbetalt lønnskompensasjon.
 Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
-Dette er {{tilbakekrevingAttributter.brutto}} kroner inkludert skatt.
+Dette er {{tilbakekrevingAttributter.bruttoBelop}} kroner inkludert skatt.
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 Vi har kommet fram til at du skal betale tilbake deler av beløpet.
@@ -42,7 +42,7 @@ Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er t
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 Vi har kommet fram til at du skal betale tilbake hele beløpet inkludert et rentetillegg på 10 %.
-Det vil si <{{tilbakekrevingAttributter.nettoBelop + renter}}> kroner etter at skatten er trukket fra.
+Det vil si {{tilbakekrevingAttributter.nettoMedRenter}} kroner etter at skatten er trukket fra.
 {{/eq}}
 
 #### Hvordan har vi kommet fram til dette?
@@ -59,7 +59,8 @@ Vedtaket er gjort etter reglene i lønnskompensasjonsforskriften og folketrygdlo
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 #### Renter
-Etter vår vurdering må du ha forstått at du ikke har gitt NAV alle nødvendige opplysninger. Derfor må du betale et rentetillegg på 10 %. Det vil si <renter (skal beregnes av netto eller brutto?)> kroner i tillegg til det feilutbetalte beløpet. Dette går fram av folketrygdloven § 22-17 a.
+Etter vår vurdering må du ha forstått at du ikke har gitt NAV alle nødvendige opplysninger.
+Derfor må du betale et rentetillegg på 10 %. Det vil si {{tilbakekrevingAttributter.renterBelop}} kroner i tillegg til det feilutbetalte beløpet. Dette går fram av folketrygdloven § 22-17 a.
 {{/eq}}
 
 #### Skatt

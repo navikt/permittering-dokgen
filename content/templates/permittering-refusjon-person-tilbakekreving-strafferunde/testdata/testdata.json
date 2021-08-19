@@ -263,7 +263,8 @@
     "reduksjonProsent": "50%",
     "bruttoRedusertInnkrevingBelop": "2200",
     "nettoRedusertInnkrevingBelop": "3300",
-    "tilbakekrevingKategori": "DELVIS_TILBAKEKREVING"
+    "tilbakekrevingKategori": "DELVIS_TILBAKEKREVING",
+    "nettoMedRenter": "200.00"
   },
   "forrigeVedtakDato": "2020-08-31",
   "varselSendtTidspunkt": "2020-09-10",
