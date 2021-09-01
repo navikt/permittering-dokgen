@@ -95,11 +95,12 @@ NAV Arbeid og ytelser lønnskompensasjon
 <td>Feilutbetalt beløp</td>
 <td>Tilbakebetaling</td>
 <td>Beløp før skatt</td>
-<td>Beløp du skal betale tilbake etter skatt er trukket fra</td>
+<td>Beløp skatt</td>
+<td>Beløp du skal</br> betale tilbake</br> etter skatt</br>  er trukket fra</td>
 </tr>
 <tr class="strafferunde-row">
-<td>{{fom}} - {{tom}}</td>
-<td>{{tilbakekrevingAttributter.bruttoBelop}} kroner</td>
+<td>{{fom}}</br>-</br>{{tom}}</td>
+<td>{{tilbakekrevingAttributter.bruttoBelop}} </br>kroner</td>
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 <td>Deler av beløpet</td>
 {{/eq}}
@@ -109,7 +110,8 @@ NAV Arbeid og ytelser lønnskompensasjon
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 <td>Hele beløpet</td>
 {{/eq}}
-<td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner</td>
-<td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner</td>
+<td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} </br> kroner</td>
+<td>{{tilbakekrevingAttributter.skattBelop}} </br> kroner</td>
+<td>{{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} </br> kroner</td>
 </tr>
 </table>
