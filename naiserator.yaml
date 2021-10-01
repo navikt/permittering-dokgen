@@ -2,13 +2,13 @@ apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
   labels:
-    team: arbeidsgiver
+    team: teamloennskomp
   name: tag-dokgen
-  namespace: arbeidsgiver
+  namespace: teamloennskomp
 spec:
   image: {{ image }}
   port: 8080
-  team: arbeidsgiver
+  team: teamloennskomp
   liveness:
     path: /actuator/info
     initialDelay: 20
@@ -25,4 +25,4 @@ spec:
     - name: APP_VERSION
       value: {{ image }}
     - name: APP_TEAM
-      value: arbeidsgiver
+      value: teamloennskomp
