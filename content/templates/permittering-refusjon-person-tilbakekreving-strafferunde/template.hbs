@@ -110,15 +110,7 @@ Vennlig hilsen </br>NAV Arbeid og ytelser lønnskompensasjon
 <tr class="strafferunde-row">
 <td>{{fom}}</br>-</br>{{tom}}</td>
 <td>{{tilbakekrevingAttributter.bruttoBelop}} </br>kroner</td>
-{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
-<td>Deler av beløpet</td>
-{{/eq}}
-{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_UTEN_RENTER"}}
-<td>Hele beløpet</td>
-{{/eq}}
-{{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
-<td>Hele beløpet</td>
-{{/eq}}
+<td>{{tilbakekrevingAttributter.prosentAndelInnkreves}} %</td>
 <td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} </br> kroner</td>
 <td>{{tilbakekrevingAttributter.skattBelop}} </br> kroner</td
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}

@@ -262,7 +262,7 @@
     "nettoBelop": "111.11",
     "bruttoBelop": "222.22",
     "saerligeGrunnerReduksjonBeskrivelse": "Særlige grunner redusjon beskrivelse",
-    "reduksjonProsent": "50%",
+    "prosentAndelInnkreves": "50",
     "bruttoRedusertInnkrevingBelop": "2200",
     "nettoRedusertInnkrevingBelop": "3300",
     "tilbakekrevingKategori": "DELVIS_TILBAKEKREVING",
