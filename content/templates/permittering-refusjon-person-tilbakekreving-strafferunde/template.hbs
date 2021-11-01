@@ -26,8 +26,7 @@
 ## Du må betale tilbake lønnskompensasjon
 <br />
 
-Vi viser til brev {{varselSendtTidspunkt}} om feilutbetalt lønnskompensasjon.
-Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
+{{#if varselSendtTidspunkt}}Vi viser til brev {{varselSendtTidspunkt}} om feilutbetalt lønnskompensasjon.{{/if}} Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
 Dette er {{tilbakekrevingAttributter.bruttoBelop}} kroner inkludert skatt.
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
