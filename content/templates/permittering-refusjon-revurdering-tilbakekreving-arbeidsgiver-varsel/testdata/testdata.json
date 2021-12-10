@@ -1,0 +1,57 @@
+{
+  "datoSendt": "04.08.2021",
+  "bedriftNavn": "Lampeland buffet",
+  "bedriftNr": "987654321",
+  "datoForsteVedtak": "04.05.2020",
+  "bruttoRefusjon": "102 000",
+  "dato3UkerFremITid": "30.08.2021",
+  "kontaktPerson": "Gudrun Nilsen",
+  "telefonNr": "4747474747",
+  "epost": "gudrun.nilsen@hotmail.com",
+  "endringsbeskrivelse": "Her kommer det noen endringer.",
+  "refusjonDifferanse": "80 000",
+  "arbeidsforhold": [
+    {
+      "fodselsnummer": "26118338781",
+      "navn": "Haukland, Per",
+      "permitteringsgrad": "variabel",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "20 000"
+    },
+    {
+      "fodselsnummer": "19091888044",
+      "navn": "Hansen, Målfrid",
+      "permitteringsgrad": "50 %",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "26 000"
+    },
+    {
+      "fodselsnummer": "04122135441",
+      "navn": "Åsane, Odd",
+      "permitteringsgrad": "50 %",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "12 000"
+    },
+    {
+      "fodselsnummer": "05121470731",
+      "navn": "Milton, Laura",
+      "permitteringsgrad": "50 %",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "20 000"
+    },
+    {
+      "fodselsnummer": "09021639548",
+      "navn": "Hansen, June",
+      "permitteringsgrad": "variabel",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "12 000"
+    },
+    {
+      "fodselsnummer": "31037548009",
+      "navn": "Olsen, Morten",
+      "permitteringsgrad": "50 %",
+      "periode": "31.03.2020 – 23.04.2020",
+      "refusjonTilVirksomheten": "20 000"
+    }
+  ]
+}
