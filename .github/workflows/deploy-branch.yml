@@ -1,101 +1,48 @@
 name: Deploy til dev
 on:
-  repository_dispatch:
-    types: [deploy-command]
+  push:
+    branches:
+      - '*'
+      - '!master'
 env:
-  IMAGE_BASE: ghcr.io/${{ github.repository }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  IMAGE: ghcr.io/${{ github.repository }}/${{ github.event.repository.name }}:${{ github.sha }}
 
 jobs:
-  deploy-branch:
-    name: Deploy til dev
+  kompiler:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Kommenterer med link til action
-        uses: actions/github-script@0.5.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.issues.createComment({
-              issue_number: ${{ github.event.client_payload.github.payload.issue.number }},
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Deploy satt i gang: https://github.com/navikt/tag-dokgen/actions/runs/${{ github.run_id }}'
-            })
-
       - name: Sjekk ut kode
         uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+     
+      - name: Logg inn i GitHub Container Registry
+        uses: docker/login-action@v1
         with:
-          ref: ${{ github.event.client_payload.slash_command.arg1 }}
-          fetch-depth: 0
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Sett miljøvariabel COMMIT
-        run: echo "COMMIT=$(git rev-parse HEAD)" >> $GITHUB_ENV
-
-      - name: Sjekk om COMMIT er oppdatert mot master
-        run: |
-          git fetch origin master
-          git merge-base --is-ancestor origin/master $COMMIT
-
-      - name: Sett miljøvariabel IMAGE
-        run: echo "IMAGE=$IMAGE_BASE:$COMMIT" >> $GITHUB_ENV
-
+      - name: Bygg, tag og push Docker-image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          builder: ${{ steps.buildx.outputs.name }}
+          tags: ${{ env.IMAGE }}
+          push: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+ 
       - name: Deploy til dev-fss
         uses: nais/deploy/actions/deploy@v1
         env:
-          TEAM: arbeidsgiver
+          TEAM: teamloennskomp
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
           CLUSTER: dev-fss
           RESOURCE: naiserator.yaml
           PRINT_PAYLOAD: true
           VARS: nais/dev-fss.json
-          REF: ${{ env.COMMIT }}
-          IMAGE: ${{ env.IMAGE }}
-
-      - name: Oppdater kommentar med deployment status ved feil
-        if: failure()
-        uses: actions/github-script@0.5.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.issues.createComment({
-              issue_number: ${{ github.event.client_payload.github.payload.issue.number }},
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'Deploy av <b>${{ env.COMMIT }}</b> feilet ❌'
-            })
-
-      - name: Oppdater kommentar med deployment status ved ok
-        if: success()
-        uses: actions/github-script@0.5.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['deploy', 'dev-fss']
-            }).then(response => {
-              response.data.forEach(issue => {
-                github.issues.removeLabel({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issue.number,
-                  name: 'dev-fss'
-                });
-              });
-            });
-
-            github.issues.createComment({
-              owner: context.issue.owner,
-              repo: context.issue.repo,
-              issue_number: ${{ github.event.client_payload.github.payload.issue.number }},
-              body: 'Deploy av <b>${{ env.COMMIT }}</b> ok ✅'
-            });
-
-            github.issues.addLabels({
-              owner: context.issue.owner,
-              repo: context.issue.repo,
-              issue_number: ${{ github.event.client_payload.github.payload.issue.number }},
-              labels: ['dev-fss']
-            });
+          VERSION: $IMAGE
