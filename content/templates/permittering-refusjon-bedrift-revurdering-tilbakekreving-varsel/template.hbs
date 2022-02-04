@@ -1,0 +1,143 @@
+<table>
+    <tr>
+        <td class="right-align">{{datoSendt}}</td>
+    </tr>
+    <tr>
+        <td class="right-align">Ref. 2020/{{id}}</td>
+    </tr>
+</table>
+</br>
+<table>
+    <tr>
+        <td class="td02">Virksomhet:</td>
+        <td>{{bedriftNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Bedriftsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+</table>
+<br />
+<br />
+
+## Vi vurderer om dere må betale tilbake refusjon for lønnskompensasjon
+<br />
+
+Dere fikk vedtak om refusjon for forskuttert lønn til permitterte ansatte <b>{{forrigeVedtakDato}}</b>. Vi har fått nye opplysninger og har beregnet refusjonen på nytt. Den nye beregningen viser at dere har fått utbetalt <b>{{summertRefusjonsbelop}}</b> kroner for mye i refusjon.
+<br />
+
+Før vi avgjør om dere skal betale tilbake, har dere rett til å uttale dere. Dette må dere gjøre innen <b>{{dato3UkerFremITid}}</b>.
+<br />
+
+Dette er kun et varsel om at vi vurderer å kreve tilbake det feilutbetalte beløpet. Det er ikke et vedtak om tilbakekreving.
+<br />
+
+### Dette har skjedd i saken
+{{{endringsbeskrivelse}}}
+<br />
+
+Dere finner flere detaljer om den nye beregningen vedlagt lenger ned i brevet.
+<br />
+
+### Dette legger vi vekt på i vurderingen vår
+
+Når vi avgjør om dere skal betale tilbake vurderer vi:
+
+<ul class="font-size-13">
+    <li>om dere forstod eller burde forstått at beløpet dere fikk utbetalt var feil</li>
+    <li>om dere har gitt riktig informasjon til NAV</li>
+    <li>om dere har gitt all informasjon til NAV i rett tid</li>
+</ul>
+
+Hvis dere bevisst har gitt oss feil eller mangelfull informasjon eller opptrådt grovt uaktsomt, kan vi kreve at dere betaler et rentetillegg på ti prosent av beløpet.
+<br />
+
+Dette går frem av folketrygdloven §§ 22-15 og 22-17 a.
+<br />
+
+### Slik kan dere uttale dere
+
+Dere kan sende uttalelsen ved å logge inn på <a href="https://arbeidsgiver.nav.no/klage-permittering-refusjon/"> https://arbeidsgiver.nav.no/klage-permittering-refusjon/ </a>
+<br />
+
+Skal dere sende vedlegg, må dette sendes på papir: <br />
+<a href="https://www.nav.no/soknader/nb/bedrift/diverse-bedrift/diverse-dokumentasjon"> https://www.nav.no/soknader/nb/bedrift/diverse-bedrift/diverse-dokumentasjon </a>
+<br />
+
+### Hva skjer videre i saken deres?
+
+Etter fristen for deres uttalelse vil vi vurdere saken og sende dere et vedtak. Dersom dere må betale hele eller deler av beløpet, vil dere få beskjed om hvordan dere betaler tilbake i vedtaket.
+<br />
+
+### Har dere spørsmål?
+
+Dere finner mer informasjon om lønnskompensasjon, refusjon og kvittering for innsendt søknadsskjema på: <a href="https://arbeidsgiver.nav.no/permittering-refusjon/"> https://arbeidsgiver.nav.no/permittering-refusjon/ </a>
+<br />
+
+Dere kan også kontakte oss på <a href="https://arbeidsgiver.nav.no/kontakt-oss/"> https://arbeidsgiver.nav.no/kontakt-oss/ </a>
+<br /><br />
+
+Vennlig hilsen
+<br />
+NAV
+<br />
+{{fattetAvNavn}}
+<br /><br />
+
+<div class="new_page" />
+
+## Vedlegg: Grunnlag for vedtaket
+
+### Informasjon om søkeren
+<table>
+    <tr>
+        <td>Innrapportert fra:</td>
+        <td>{{bedriftNavn}}</td>
+    </tr>
+    <tr>
+        <td>Bedriftsnummer:</td>
+        <td>{{bedriftNr}}</td>
+    </tr>
+    <tr>
+        <td>Kontaktperson:</td>
+        <td>{{kontaktNavn}}</td>
+    </tr>
+    <tr>
+        <td>Telefonnummer:</td>
+        <td>{{kontaktTlf}}</td>
+    </tr>
+    <tr>
+        <td>E-post:</td>
+        <td>{{kontaktEpost}}</td>
+    </tr>
+
+</table>
+
+### Informasjon om refusjonen
+
+<table border="1">
+    <tr>
+        <th>Fødselsnummer</th>
+        <th>Navn</th>
+        <th>Lønn per dag</th>
+        <th>Permitterings- prosent</th>
+        <th>Periode</th>
+        <th>Refusjon til deres virksomhet</th>
+        <th>Avkortet 6G</th>
+    </tr>
+    <!-- {{#each arbeidsforhold}} -->
+    <tr>
+        <td>{{this.fnr}}</td>
+        <td>{{this.navn}}</td>
+        <td>{{this.dagsats}}</td>
+        <td>{{this.permitteringsprosent}}</td>
+        <td>{{this.periode}}</td>
+        <td>{{this.refusjonsbeløp}} kr</td>
+        <td>{{this.overstiger6G}}</td>
+    </tr>
+    <!-- {{/each}} -->
+    <tr>
+        <td border="0" colspan="5">Sum</td>
+        <td><b>{{summertRefusjonsbelop}} kr</b></td>
+    </tr>
+</table>
