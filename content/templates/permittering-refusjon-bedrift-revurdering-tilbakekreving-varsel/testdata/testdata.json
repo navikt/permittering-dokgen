@@ -1,6 +1,6 @@
 {
   "id": "01E9NTE8C4B7K96GZPMAKGP8ZT",
-  "datoSendt": "2020-11-31",
+  "datoSendt": "31. November 2020",
   "bedriftNavn": "SPENNENDE ELEKTRO",
   "bedriftNr": "123456789",
   "kontaktNavn": "Gran Granli",
@@ -9,16 +9,16 @@
   "summertRefusjonsbelop": "40000.00",
   "differanseFraForrigeBeløp": "4000.00",
   "endringsbeskrivelse": "(her kommer saksbehandlers endringsbeskrivelse)",
-  "forrigeVedtakDato": "2020-07-09",
+  "forrigeVedtakDato": "9. Juli 2020",
   "fattetAvNavn": "FFFF Navnesen",
-  "dato3UkerFremITid": "2021-01-31",
+  "dato3UkerFremITid": "1. Januar 2021",
   "arbeidsforhold": [
     {
       "fnr": "10987654321",
       "dagsats": "1000.00",
       "navn": "Furu Furuset",
       "permitteringsprosent": "100.0",
-      "periode": "2020-04-01 - 2020-04-10",
+      "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "8000.00",
       "overstiger6G": "ja",
       "endringsbeskrivelse": "Endret dato"
@@ -28,7 +28,7 @@
       "dagsats": "2000.00",
       "navn": "Furu Furuset",
       "permitteringsprosent": "100.0",
-      "periode": "2020-04-01 - 2020-04-10",
+      "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "16000.00",
       "overstiger6G": "",
       "endringsbeskrivelse": "Endret dagsats"
@@ -38,7 +38,7 @@
       "navn": "Furu Furuset",
       "dagsats": "1500.00",
       "permitteringsprosent": "100.0",
-      "periode": "2020-04-01 - 2020-04-10",
+      "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "12000.00",
       "overstiger6G": "",
       "endringsbeskrivelse": "Endret på utbetalingsdager"

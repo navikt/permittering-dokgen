@@ -1,3 +1,4 @@
+<div id="content">
 <table>
     <tr>
         <td></td>
@@ -26,28 +27,45 @@
 ## Du må betale tilbake lønnskompensasjon
 <br />
 
-{{#if varselSendtTidspunkt}}Vi viser til brev {{varselSendtTidspunkt}} om feilutbetalt lønnskompensasjon.{{/if}} Du har fått utbetalt for mye lønnskompensasjon fra {{fom}} til {{tom}}.
-Dette er {{tilbakekrevingAttributter.bruttoBelop}} kroner inkludert skatt.
+{{#if varselSendtTidspunkt}}Vi varslet deg {{varselSendtTidspunkt}} om at du har fått utbetalt for mye lønnskompensasjon.{{/if}}
+
+{{#if harKravPaLoennskomp}}
+Du har rett til {{totalKompensasjon}} kroner i lønnskompensasjon, men har fått {{forrigeVedtakBeløp}} kroner.
+Det feilutbetalte beløpet før skatt er {{tilbakekrevingAttributter.bruttoBelop}} kroner.
+{{else}}
+Du oppfyller ikke kravene for lønnskompensasjon,  men har fått {{forrigeVedtakBeløp}} kroner.
+Det feilutbetalte beløpet før skatt er {{tilbakekrevingAttributter.bruttoBelop}} kroner.
+{{/if}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
-Vi har kommet fram til at du skal betale tilbake deler av beløpet.
-Det vil si {{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner etter at skatten er trukket fra.
+Vi har kommet fram til at du må betale tilbake deler av dette beløpet.
+Beløpet du skal betale tilbake etter skatt er {{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner.
 {{/eq}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_UTEN_RENTER"}}
-Vi har kommet fram til at du skal betale tilbake hele beløpet.
-Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner etter at skatten er trukket fra.
+Vi har kommet fram til at du må betale tilbake hele dette beløpet.
+Beløpet du skal betale tilbake etter skatt er {{tilbakekrevingAttributter.nettoBelop}} kroner.
 {{/eq}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
-Vi har kommet fram til at du skal betale tilbake hele beløpet inkludert et rentetillegg på 10 prosent.
-Det vil si {{tilbakekrevingAttributter.nettoMedRenter}} kroner etter at skatten er trukket fra.
+Vi har kommet fram til at du må betale tilbake hele dette beløpet.
+Beløpet du skal betale tilbake etter skatt er {{tilbakekrevingAttributter.nettoMedRenter}} kroner. Dette er inkludert et rentetillegg på 10 %.
 {{/eq}}
+
+#### Hvordan betale tilbake pengene du skylder?
+Du vil i løpet av 3-7 dager motta et krav med informasjon om hvordan du betaler tilbake det du skylder.
+Du finner mer informasjon på <a href="www.nav.no/innkreving">www.nav.no/innkreving</a>.
 
 #### Hvordan har vi kommet fram til dette?
 <p>
 {{{endringsbeskrivelse}}}
 </p>
+
+<br/>
+
+{{#if harKravPaLoennskomp}}
+I tabellen under kan du se en ny og detaljert oversikt over lønnskompensasjon du har rett til.
+{{/if}}
 
 #### Er det særlige grunner til å redusere beløpet?
 <p>
@@ -57,42 +75,68 @@ Det vil si {{tilbakekrevingAttributter.nettoMedRenter}} kroner etter at skatten 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 #### Renter
 Vi har vurdert at du har handlet grovt uaktsomt eller forsettlig fordi du har gitt feilaktige eller mangelfulle opplysninger til NAV.
-Derfor må du betale et rentetillegg på 10 prosent. Det vil si {{tilbakekrevingAttributter.renteBelop}} kroner i tillegg til det feilutbetalte beløpet.
+Derfor må du betale et rentetillegg på 10%. Det vil si {{tilbakekrevingAttributter.renteBelop}} kroner i tillegg til det feilutbetalte beløpet.
 Dette går fram av folketrygdloven § 22-17 a.
 {{/eq}}
 
 #### Skatt
-Beløpet du skal betale tilbake etter at skatt er trukket fra, er beregnet etter ditt gjennomsnittlige skattetrekk hver måned. Det gjør at beløpet du skal betale tilbake etter skatt, ikke alltid er likt med beløpet du mottok på din konto.
-Når NAV mottar tilbakebetaling fra deg gir vi opplysninger til Skatteetaten som vil vurdere om det er grunnlag for å endre ditt skatteoppgjør.
-
-#### Hvordan betale tilbake pengene du skylder
-Du vil få krav fra NAV Innkreving på det beløpet du skal betale tilbake.
-Du finner mer informasjon på www.nav.no/innkreving.
+Beløpet du skal betale tilbake etter skatt er trukket fra, er beregnet etter ditt skattetrekk på utbetalingen. <br/><br/>
+NAV gir opplysninger til Skatteetaten om skattebeløpet og om beløpet du skal betale tilbake før skatt er trukket fra. Skatteetaten vil vurdere om det er grunnlag for å endre skatteoppgjøret ditt.
 
 #### Du har rett til å klage 
-Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via https://klage.nav.no/nb/korona/lonnskompensasjon .
-Du må som hovedregel begynne å betale beløpet tilbake, selv om du klager på dette vedtaket.  Dette går fram av forvaltningsloven § 42. Hvis du får vedtak om at du ikke trengte å betale tilbake hele eller deler av beløpet du skyldte, betaler vi pengene tilbake til deg.
+Du kan klage innen seks uker fra du mottar dette vedtaket. Klagen skal være skriftlig og mest mulig konkret. Du kan sende klagen til oss via <a href="https://klage.nav.no/nb/korona/lonnskompensasjon">https://klage.nav.no/nb/korona/lonnskompensasjon</a>.
+Du må som hovedregel begynne å betale beløpet tilbake selv om du klager på dette vedtaket. Hvis du får medhold i klagen, vil vi betale beløpet tilbake til deg.
 
 #### Du har rett til innsyn
-På www.nav.no/dittnav kan du se dokumentene i saken din.
-
-<br />
+På <a href="www.nav.no/dittnav">www.nav.no/dittnav</a> kan du se dokumentene i saken din.
 
 #### Har du spørsmål? 
-Du finner mer informasjon på www.nav.no/lønnskompensasjon.  Utbetalingen din og skattetrekket sjekker du på www.nav.no/utbetalinger.  Har du andre spørsmål, se hvordan du kan kontakte oss på www.nav.no/kontakt. 
+Du finner mer informasjon på <a href="www.nav.no/lonnskompensasjon">www.nav.no/lonnskompensasjon</a>. Utbetalingen din og skattetrekket sjekker du på <a href="www.nav.no/utbetalinger">www.nav.no/utbetalinger</a>.  Har du andre spørsmål, se hvordan du kan kontakte oss på <a href="www.nav.no/kontakt">www.nav.no/kontakt</a>.
 
  </br>
-Vennlig hilsen </br>NAV Arbeid og ytelser lønnskompensasjon
+
+Vennlig hilsen </br>
+
 <table style="text-align: left;">
+<tr class="vennlig-hilsen-row">
 <td>{{fattetAvNavn}}</td>
 <td>{{attestantNavn}}</td>
+</tr>
+<tr class="vennlig-hilsen-row">
+<td>NAV Arbeid og ytelser lønnskompensasjon</td>
+<td>NAV Arbeid og ytelser lønnskompensasjon</td>
+</tr>
 </table>
 <br />
 <br />
 
-<div class="newpage"/>
+<div class="new_page"/>
 
+### Detaljer for den nye beregningen:
 
+<table style="text-align: left;">
+<tr class="vennlig-hilsen-row">
+<td>Arbeidsgiver:</td>
+<td>{{bedriftNavn}}</td>
+</tr>
+<tr class="vennlig-hilsen-row">
+<td>Organisasjonsnummer:</td>
+<td>{{bedriftNr}}</td>
+</tr>
+<tr class="vennlig-hilsen-row">
+<td>Startdato permittering (dag 1):</td>
+<td>{{fom}}</td>
+</tr>
+<tr class="vennlig-hilsen-row">
+<td>Sluttdato periode:</td>
+<td>{{tom}}</td>
+</tr>
+</table>
+<br/><br/>
+
+#### Oversikt over resultatet av tilbakebetalingssaken
+
+<br/>
 <table border="1" class="strafferunde-table" >
 <tr class="strafferunde-table-header">
 <td>Periode</td>
@@ -110,9 +154,9 @@ Vennlig hilsen </br>NAV Arbeid og ytelser lønnskompensasjon
 <tr class="strafferunde-row">
 <td>{{fom}}</br>-</br>{{tom}}</td>
 <td>{{tilbakekrevingAttributter.bruttoBelop}} </br>kroner</td>
-<td>{{tilbakekrevingAttributter.prosentAndelInnkreves}} prosent</td>
+<td>{{tilbakekrevingAttributter.prosentAndelInnkreves}}%</td>
 <td>{{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} </br> kroner</td>
-<td>{{tilbakekrevingAttributter.skattBelop}} </br> kroner</td
+<td>{{tilbakekrevingAttributter.skattBelop}} </br> kroner</td>
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 <td>{{tilbakekrevingAttributter.nettoMedRenter}} </br> kroner</td>
 {{/eq}}
@@ -121,3 +165,37 @@ Vennlig hilsen </br>NAV Arbeid og ytelser lønnskompensasjon
 {{/neq}}
 </tr>
 </table>
+<br /><br />
+{{#if harKravPaLoennskomp}}
+
+#### Oversikt over ny beregning av lønnskompensasjon
+<br />
+
+<table border="1">
+<tr>
+<th>Dato</th>
+<th>Lønn per dag</th>
+<th>Permitterings- prosent</th>
+<th>Refundert til arbeidsgiver</th>
+<th>Avkorting 6G</th>
+<th>Lønn før skatt</th>
+<th></th>
+</tr>
+<!-- {{#each dagBeregninger}} -->
+<tr>
+<td>{{this.dato}}</td>
+<td>{{this.dagsats}}</td>
+<td>{{this.permitteringsgrad}}</td>
+<td>{{this.refusjonssbeløp}}</td>
+<td>{{this.overstiger6G}}</td>
+<td>{{this.lønnskompensasjonsbeløp}}</td>
+<td>{{this.dagtype}}</td>
+</tr>
+<!-- {{/each}} -->
+<tr>
+<td border="0" colspan="5">Sum</td>
+<td><b>{{totalKompensasjon}}</b></td>
+</tr>
+</table>
+{{/if}}
+</div id="content">
