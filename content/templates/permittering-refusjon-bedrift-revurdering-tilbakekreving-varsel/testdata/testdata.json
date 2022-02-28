@@ -21,6 +21,7 @@
       "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "8000.00",
       "overstiger6G": "ja",
+      "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret dato"
     },
     {
@@ -31,6 +32,7 @@
       "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "16000.00",
       "overstiger6G": "",
+      "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret dagsats"
     },
     {
@@ -41,7 +43,19 @@
       "periode": "01.04.2020 - 01.04.2020",
       "refusjonsbeløp": "12000.00",
       "overstiger6G": "",
+      "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret på utbetalingsdager"
+    },
+    {
+      "fnr": "05078808022",
+      "navn": "Furu Furuset",
+      "dagsats": "1500.00",
+      "permitteringsprosent": "100.0",
+      "periode": "01.04.2020 - 01.04.2020",
+      "refusjonsbeløp": "12000.00",
+      "overstiger6G": "",
+      "harKravPaLoennskomp": false,
+      "endringsbeskrivelse": "Oppfyller ikke vilkårene"
     }
   ]
 }

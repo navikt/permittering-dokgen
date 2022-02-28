@@ -134,7 +134,11 @@ NAV Arbeid og ytelser lønnskompensasjon
         <td>{{this.navn}}</td>
         <td>{{this.dagsats}}</td>
         <td>{{this.permitteringsprosent}}</td>
+        <!-- {{#if this.harKravPaLoennskomp}} -->
         <td>{{this.periode}}</td>
+        <!-- {{else}} -->
+        <td>Oppfyller ikke vilkårene</td>
+        <!-- {{/if}} -->
         <td>{{this.refusjonsbeløp}} kr</td>
         <td>{{this.overstiger6G}}</td>
     </tr>
