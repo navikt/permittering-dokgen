@@ -29,7 +29,7 @@
   "varselSendtTidspunkt": "16. juni 2021",
   "differanseFraForrigeBeløp": "-1 500",
   "forrigeVedtakBeløp": "18 000",
-
+  "summertRefusjonsbelop": "48 000",
   "lønnskompensasjonRevurderingAttributter": {
     "medEndring": true,
     "gOmregning": false,
@@ -58,7 +58,7 @@
       "navn": "Furu Furuset",
       "permitteringsprosent": "100.0",
       "periode": "01.04.2020 - 01.04.2020",
-      "refusjonsbeløp": "8000.00",
+      "refusjonsbeløp": "8 000",
       "overstiger6G": "ja",
       "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret dato"
@@ -69,7 +69,7 @@
       "navn": "Furu Furuset",
       "permitteringsprosent": "100.0",
       "periode": "01.04.2020 - 01.04.2020",
-      "refusjonsbeløp": "16000.00",
+      "refusjonsbeløp": "16 000",
       "overstiger6G": "",
       "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret dagsats"
@@ -80,7 +80,7 @@
       "dagsats": "1500.00",
       "permitteringsprosent": "100.0",
       "periode": "01.04.2020 - 01.04.2020",
-      "refusjonsbeløp": "12000.00",
+      "refusjonsbeløp": "12 000",
       "overstiger6G": "",
       "harKravPaLoennskomp": true,
       "endringsbeskrivelse": "Endret på utbetalingsdager"
@@ -91,7 +91,7 @@
       "dagsats": "1500.00",
       "permitteringsprosent": "100.0",
       "periode": "01.04.2020 - 01.04.2020",
-      "refusjonsbeløp": "12000.00",
+      "refusjonsbeløp": "12 000",
       "overstiger6G": "",
       "harKravPaLoennskomp": false,
       "endringsbeskrivelse": "Oppfyller ikke vilkårene"
