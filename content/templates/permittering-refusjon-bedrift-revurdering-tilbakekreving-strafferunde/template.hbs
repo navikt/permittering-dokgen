@@ -27,23 +27,23 @@
 {{#if varselSendtTidspunkt}}Vi varslet dere {{varselSendtTidspunkt}} om feilutbetalt refusjon for forskuttert lønn til permitterte ansatte.{{/if}}
 
 {{#if harKravPaLoennskomp}}
-Dere har rett til {{totalKompensasjon}} kroner i refusjon for forskuttert lønn, men har fått {{forrigeVedtakBeløp}} kroner.
+Dere har rett til {{totalKompensasjon}} kroner i refusjon for forskuttert lønn, men har fått {{forrigeVedtakBelop}} kroner.
 Det feilutbetalte beløpet er {{tilbakekrevingAttributter.bruttoBelop}} kroner.
 {{/if}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 Vi har kommet fram til at dere må betale tilbake deler av beløpet.
-Det vil si {{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner.
+Det vil si {{tilbakekrevingAttributter.bruttoRedusertInnkrevingBelop}} kroner.
 {{/eq}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_UTEN_RENTER"}}
 Vi har kommet fram til at dere må betale tilbake hele beløpet.
-Det vil si {{tilbakekrevingAttributter.nettoBelop}} kroner.
+Det vil si {{tilbakekrevingAttributter.bruttoBelop}} kroner.
 {{/eq}}
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 Vi har kommet fram til at dere må betale tilbake hele beløpet inkludert et rentetillegg på 10 %.
-Det vil si {{tilbakekrevingAttributter.nettoMedRenter}} kroner.
+Det vil si {{tilbakekrevingAttributter.bruttoMedRenter}} kroner.
 {{/eq}}
 
 #### Hvordan betale tilbake pengene dere skylder?
