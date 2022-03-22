@@ -4,7 +4,7 @@
   "kontaktNavn": "Gran Granli",
   "kontaktTlf": "44556677",
   "kontaktEpost": "gran@spennendeelektro.no",
-  "totalKompensasjon": "13 500",
+  "summertRefusjonsbelop": "13 500",
   "bedriftNavn": "BARE RAR",
   "bedriftNr": "123456789",
   "sakId": "01FDA2DXTZQNBPDSG0BX43F1ND",
@@ -15,9 +15,7 @@
   "attestantNavn": "Fornavn Etternavnsen Z61000",
   "endringsbeskrivelse": "(Her kommer saksbehandlers endringsbeskrivelse)",
   "varselSendtTidspunkt": "16. juni 2021",
-  "forrigeVedtakBelop": "18 000",
-  "summertRefusjonsbelop": "48 000",
-
+  "forrigeBelop": "18 000",
   "tilbakekrevingAttributter": {
     "bruttoBelop": "1 500",
     "saerligeGrunnerReduksjonBeskrivelse": "(Dette er en beskrivelse av hvorfor saksbehandleren har kommet frem til å gi reduksjon i beløp (særlige grunner))",
