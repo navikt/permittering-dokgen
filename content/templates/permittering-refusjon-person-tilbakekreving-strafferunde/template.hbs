@@ -24,10 +24,10 @@
 <br />
 <br />
 
-## Du må betale tilbake lønnskompensasjon
+## Vi har endret lønnskompensasjonen din
 <br />
 
-{{#if varselSendtTidspunkt}}Vi varslet deg {{varselSendtTidspunkt}} om at du har fått utbetalt for mye lønnskompensasjon.{{/if}}
+Vi viser til brev om tilbakekreving av {{#if varselSendtTidspunkt}}{{varselSendtTidspunkt}}{{else}}{{forrigeVedtakDato}}{{/if}}.
 
 {{#if harKravPaLoennskomp}}
 Du har rett til {{totalKompensasjon}} kroner i lønnskompensasjon, men har fått {{forrigeVedtakBeløp}} kroner.
@@ -51,10 +51,6 @@ Vi har kommet fram til at du må betale tilbake hele dette beløpet.
 Beløpet du skal betale tilbake etter skatt er {{tilbakekrevingAttributter.nettoMedRenter}} kroner. Dette er inkludert et rentetillegg på 10 %.
 {{/eq}}
 
-#### Hvordan betale tilbake pengene du skylder?
-Du vil i løpet av 3-7 dager motta et krav med informasjon om hvordan du betaler tilbake det du skylder.
-Du finner mer informasjon på <a href="www.nav.no/innkreving">www.nav.no/innkreving</a>.
-
 #### Hvordan har vi kommet fram til dette?
 <p>
 {{{endringsbeskrivelse}}}
@@ -70,6 +66,18 @@ I tabellen under kan du se en ny og detaljert oversikt over lønnskompensasjon d
 <p>
 {{{tilbakekrevingAttributter.saerligeGrunnerReduksjonBeskrivelse}}}
 </p>
+
+#### Hvordan betale tilbake pengene du skylder?
+Du vil i løpet av 3-7 dager motta et krav med informasjon om hvordan du betaler tilbake det du skylder.
+
+Hvis du allerede har mottatt et krav om tilbakebetaling av lønnskompensasjon, 
+sender vi informasjon til NAV Innkreving om at dette kravet skal endres. Hvis 
+endringen som nå gjøres innebærer at du har betalt tilbake for mye, vil du 
+automatisk få tilbakebetalt dette. Har du utestående krav som er forfalt hos 
+Skatteetaten, kan beløpet som eventuelt skal utbetales trekkes fra det 
+utestående kravet.
+
+Ved spørsmål om tilbakebetalingen, må du kontakte NAV Innkreving. Se <a href="www.nav.no/innkreving">www.nav.no/innkreving</a> for mer informasjon.
 
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "FULL_TILBAKEKREVING_MED_RENTER"}}
 #### Renter
