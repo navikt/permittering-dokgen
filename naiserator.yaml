@@ -26,3 +26,5 @@ spec:
       value: {{ image }}
     - name: APP_TEAM
       value: teamloennskomp
+  secureLogs:
+    enabled: true
