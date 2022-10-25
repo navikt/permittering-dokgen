@@ -26,9 +26,11 @@
 
 # Vi har endret refusjonen deres
 
-Vi har mottatt nye opplysninger som gjør at vi har refundert ytterligere <b>{{differanseFraForrigeBeløp}}</b> kr for forskuttert lønn for permitterte ansatte.
+Vi har mottatt nye opplysninger som gjør at vi har refundert {{#if forrigeVedtakDato}}ytterligere {{/if}}<b>{{differanseFraForrigeBeløp}}</b> kr for forskuttert lønn for permitterte ansatte.
 
+{{#if forrigeVedtakDato}}
 I vedtaket av {{forrigeVedtakDato}} fikk dere {{forrigeBeløp}} kr. Den nye totalsummen er {{summertRefusjonsbelop}} kr.
+{{/if}}
 
 </br>
 
