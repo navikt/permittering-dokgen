@@ -36,6 +36,10 @@ Det feilutbetalte beløpet før skatt er {{tilbakekrevingAttributter.bruttoBelop
 Du oppfyller ikke vilkårene for rett til lønnskompensasjon. Det feilutbetalte beløpet før skatt er {{tilbakekrevingAttributter.bruttoBelop}} kroner.
 {{/if}}
 
+{{#if erBeløpJustert}}
+Vi gjør oppmerksom på at beløpet kan være justert mot andre ytelser du har fått fra NAV.
+{{/if}}
+
 {{#eq tilbakekrevingAttributter.tilbakekrevingKategori "DELVIS_TILBAKEKREVING"}}
 Vi har kommet fram til at du må betale tilbake deler av dette beløpet.
 Beløpet du skal betale tilbake etter skatt er {{tilbakekrevingAttributter.nettoRedusertInnkrevingBelop}} kroner.

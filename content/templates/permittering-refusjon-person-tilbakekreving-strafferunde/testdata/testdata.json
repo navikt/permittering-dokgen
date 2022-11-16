@@ -273,5 +273,6 @@
   "varselSendtTidspunkt": "16. juni 2021",
   "differanseFraForrigeBeløp": "-1 500",
   "forrigeVedtakBeløp": "18 000",
-  "harKravPaLoennskomp": true
+  "harKravPaLoennskomp": true,
+  "erBeløpJustert": false
 }
