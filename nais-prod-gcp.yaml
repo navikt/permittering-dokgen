@@ -1,0 +1,18 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  labels:
+    team: permittering-og-nedbemanning
+  name: permittering-dokgen
+  namespace: permittering-og-nedbemanning
+spec:
+  image: {{ image }}
+  liveness:
+    path: /actuator/info
+    initialDelay: 20
+    failureThreshold: 10
+  readiness:
+    path: /actuator/health
+    initialDelay: 20
+  replicas:
+    min: 1

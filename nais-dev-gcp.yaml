@@ -3,11 +3,12 @@ kind: "Application"
 metadata:
   labels:
     team: permittering-og-nedbemanning
-  name: tag-dokgen
+  name: permittering-dokgen
   namespace: permittering-og-nedbemanning
 spec:
   image: {{ image }}
-  port: 8080
+  ingresses:
+    - https://permittering-dokgen.intern.dev.nav.no
   liveness:
     path: /actuator/info
     initialDelay: 20
@@ -17,13 +18,3 @@ spec:
     initialDelay: 20
   replicas:
     min: 1
-    max: 1
-  ingresses:
-    - {{{ingress}}}
-  env:
-    - name: APP_VERSION
-      value: {{ image }}
-    - name: APP_TEAM
-      value: permittering-og-nedbemanning
-  secureLogs:
-    enabled: true
