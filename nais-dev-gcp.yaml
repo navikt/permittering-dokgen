@@ -18,3 +18,5 @@ spec:
     initialDelay: 20
   replicas:
     min: 1
+  secureLogs:
+    enabled: true
