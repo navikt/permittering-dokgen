@@ -18,3 +18,7 @@ spec:
     min: 1
   secureLogs:
     enabled: true
+  accessPolicy:
+    inbound:
+      rules:
+        - application: permitteringsskjema-api
