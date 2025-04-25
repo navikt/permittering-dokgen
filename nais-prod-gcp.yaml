@@ -9,11 +9,15 @@ spec:
   image: {{ image }}
   liveness:
     path: /actuator/info
-    initialDelay: 20
-    failureThreshold: 10
   readiness:
     path: /actuator/health
-    initialDelay: 20
+  observability:
+    autoInstrumentation:
+      enabled: true
+      runtime: java
+    logging:
+      destinations:
+        - id: loki
   replicas:
     min: 1
   secureLogs:
