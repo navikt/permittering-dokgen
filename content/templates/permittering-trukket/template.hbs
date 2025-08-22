@@ -1,0 +1,77 @@
+# {{#eq type 'PERMITTERING_UTEN_LØNN'}}PERMITTERING UTEN LØNN{{/eq}}{{#eq type 'MASSEOPPSIGELSE'}}MASSEOPPSIGELSE{{/eq}}{{#eq type 'INNSKRENKNING_I_ARBEIDSTID'}}INNSKRENKNING I ARBEIDSTID{{/eq}}{{#if trukketTidspunkt}} – TRUKKET{{/if}}
+
+
+## Kontaktinformasjon
+
+<table>
+    <tr>
+        <td class="td02">Bedrift:</td>
+        <td>{{bedriftNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Bedriftsnummer:</td>
+        <td>{{bedriftsnummer}} </td>
+    </tr>
+</table>
+<br />
+<table>
+    <tr>
+        <td class="td02">Kontaktperson:</td>
+        <td>{{kontaktNavn}} </td>
+    </tr>
+    <tr>
+        <td class="td02">Telefonnummer:</td>
+        <td> {{kontaktTlf}} </td>
+    </tr>
+    <tr>
+        <td class="td02">E-post:</td>
+        <td> {{kontaktEpost}} </td>
+    </tr>
+</table>
+
+
+<br />
+<br />
+
+
+## Generelle opplysninger
+
+<table>
+    <tr>
+        <td class="td03">Antall berørte:</td>
+        <td>{{antallBerorte}} </td>
+    </tr>
+    <tr>
+        <td class="td03"> {{#eq type 'PERMITTERING_UTEN_LØNN'}}Permitteringene vil finne sted fra:{{/eq}} {{#neq type 'PERMITTERING_UTEN_LØNN'}}Fra dato:{{/neq}}</td>
+        <td> {{startDato}} </td>
+    </tr>
+    <tr>
+        <td class="td03">{{#eq type 'PERMITTERING_UTEN_LØNN'}}Permitteringene vil vare til:{{/eq}} {{#neq type 'PERMITTERING_UTEN_LØNN'}}Til dato:{{/neq}}</td>
+        <td> {{#if sluttDato}} {{sluttDato}} {{else}} Vet ikke hvor lenge de vil vare {{/if}} </td>
+    </tr>
+    <tr>
+        <td class="td03">Tidspunkt for innsending:</td>
+        <td> {{sendtInnTidspunkt}} </td>
+    </tr>
+
+</table>
+
+## Status
+
+<table>
+    <tr>
+        <td class="td03">Status:</td>
+        <td><strong>Meldingen er trukket</strong></td>
+    </tr>
+    <tr>
+        <td class="td03">Trukket tidspunkt:</td>
+        <td>
+            {{trukketTidspunkt}}
+        </td>
+    </tr>
+</table>
+<br/><br/>
+
+
+{{fritekst}}
+
