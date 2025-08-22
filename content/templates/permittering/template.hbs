@@ -1,7 +1,4 @@
-# {{#eq type 'PERMITTERING_UTEN_LØNN'}} PERMITTERING UTEN LØNN {{/eq}}
-# {{#eq type 'MASSEOPPSIGELSE'}} MASSEOPPSIGELSE {{/eq}}
-# {{#eq type 'INNSKRENKNING_I_ARBEIDSTID'}} INNSKRENKNING I ARBEIDSTID {{/eq}}
-
+# {{#eq type 'PERMITTERING_UTEN_LØNN'}}PERMITTERING UTEN LØNN{{/eq}}{{#eq type 'MASSEOPPSIGELSE'}}MASSEOPPSIGELSE{{/eq}}{{#eq type 'INNSKRENKNING_I_ARBEIDSTID'}}INNSKRENKNING I ARBEIDSTID{{/eq}}{{#if trukketTidspunkt}} – TRUKKET{{/if}}
 
 
 ## Kontaktinformasjon
@@ -16,7 +13,7 @@
         <td>{{bedriftsnummer}} </td>
     </tr>
 </table>
-<br />
+<br/>
 <table>
     <tr>
         <td class="td02">Kontaktperson:</td>
@@ -33,8 +30,8 @@
 </table>
 
 
-<br />
-<br />
+<br/>
+<br/>
 
 
 ## Generelle opplysninger
@@ -60,5 +57,21 @@
 </table>
 
 
-{{fritekst}}
+{{#if trukketTidspunkt}}
+    <br/><br/>
 
+    ## Status
+
+    <table>
+        <tr>
+            <td class="td03">Status:</td>
+            <td><strong>Meldingen er trukket</strong></td>
+        </tr>
+        <tr>
+            <td class="td03">Trukket dato:</td>
+            <td>{{trukketTidspunkt}}</td>
+        </tr>
+    </table>
+{{/if}}
+
+{{fritekst}}
