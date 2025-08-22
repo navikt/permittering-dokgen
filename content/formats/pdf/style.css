@@ -160,3 +160,8 @@ td {
 hr.solid {
     border-top: 1px solid black;
 }
+
+.section-heading {
+    font-size: 22px;
+    margin: 3mm 0 1.5mm 0;
+}
