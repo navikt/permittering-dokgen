@@ -16,5 +16,5 @@ Du kan se permitteringsmeldingen i dev (krever naisdevice) her:
 docker build -t permittering-dokgen . && docker run --rm -it -p 8080:8080 -e SPRING_PROFILES_ACTIVE=dev permittering-dokgen
 ```
 
-Besøk så f.eks. http://localhost:8080/template/permittering/preview-pdf/permittering-trukket
+Besøk så http://localhost:8080/template/permittering-trukket/preview-pdf/permittering eller http://localhost:8080/template/permittering/preview-pdf/permittering
 

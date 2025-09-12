@@ -54,11 +54,10 @@
     </tr>
     <tr>
         <td class="td03">Tidspunkt for innsending:</td>
-        <td> {{sendtInnTidspunkt}} </td>
+        <td> {{#if sendtInnTidspunkt}}{{norwegian-datetime sendtInnTidspunkt}}{{/if}} </td>
     </tr>
 
 </table>
 
 
 {{fritekst}}
-
