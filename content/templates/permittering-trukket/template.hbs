@@ -51,7 +51,7 @@
     </tr>
     <tr>
         <td class="td03">Tidspunkt for innsending:</td>
-        <td> {{sendtInnTidspunkt}} </td>
+        <td> {{#if sendtInnTidspunkt}}{{norwegian-datetime sendtInnTidspunkt}}{{/if}} </td>
     </tr>
 
 </table>
@@ -66,7 +66,7 @@
     <tr>
         <td class="td03">Trukket tidspunkt:</td>
         <td>
-            {{trukketTidspunkt}}
+            {{#if trukketTidspunkt}}{{norwegian-datetime trukketTidspunkt}}{{/if}}
         </td>
     </tr>
 </table>
@@ -74,4 +74,3 @@
 
 
 {{fritekst}}
-
